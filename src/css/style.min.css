@@ -1,0 +1,359 @@
+/* Fonts */
+
+@font-face {
+  font-family: "El Messiri";
+  src: url("../fonts/ElMessiri/ElMessiri-Medium.eot");
+  src: url("../fonts/ElMessiri/ElMessiri-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/ElMessiri/ElMessiri-Medium.woff2") format("woff2"), url("../fonts/ElMessiri/ElMessiri-Medium.woff") format("woff"), url("../fonts/ElMessiri/ElMessiri-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "El Messiri";
+  src: url("../fonts/ElMessiri/ElMessiri-SemiBold.eot");
+  src: url("../fonts/ElMessiri/ElMessiri-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ElMessiri/ElMessiri-SemiBold.woff2") format("woff2"), url("../fonts/ElMessiri/ElMessiri-SemiBold.woff") format("woff"), url("../fonts/ElMessiri/ElMessiri-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Winston";
+  src: url("../fonts/Winston/Winston-Light.eot");
+  src: url("../fonts/Winston/Winston-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Winston/Winston-Light.woff2") format("woff2"), url("../fonts/Winston/Winston-Light.woff") format("woff"), url("../fonts/Winston/Winston-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Winston";
+  src: url("../fonts/Winston/Winston-Medium.eot");
+  src: url("../fonts/Winston/Winston-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Winston/Winston-Medium.woff2") format("woff2"), url("../fonts/Winston/Winston-Medium.woff") format("woff"), url("../fonts/Winston/Winston-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Winston";
+  src: url("../fonts/Winston/Winston-SemiBold.eot");
+  src: url("../fonts/Winston/Winston-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Winston/Winston-SemiBold.woff2") format("woff2"), url("../fonts/Winston/Winston-SemiBold.woff") format("woff"), url("../fonts/Winston/Winston-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --color-white: #FFFFFF;
+  --color-dark: #2F2722;
+  --color-light-dark: #6D6864;
+  --color-gray: #CACACA;
+  --color-accent: #B8996A;
+  --color-accent-gradient: linear-gradient(0deg, #D1B180, #D1B180), linear-gradient(92.14deg, #D1B180 0%, #B8996A 100%);
+  --font-elmessiri: "El Messiri", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-winston: "Winston", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Animation */
+
+/* Base Classes */
+
+/* Containers */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-full {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Hide */
+
+.hide {
+  display: none !important;
+}
+
+/* Position */
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Background */
+
+.bg--white {
+  background-color: var(--color-white);
+}
+
+.bg--color-accent-gradient {
+  background-color: var(--color-accent-gradient);
+}
+
+/* Links */
+
+.link {
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+
+.link:hover {
+  color: var(--color-accent);
+}
+
+/* Title */
+
+.title {
+  font-family: var(--font-elmessiri);
+  font-style: normal;
+  margin: 0;
+}
+
+.title--big {
+  font-size: calc(30px + 15 * ((100vw - 360px) / 840));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .title--big {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .title--big {
+    font-size: 30px;
+  }
+}
+
+.title--large {
+  font-size: calc(20px + 5 * ((100vw - 360px) / 840));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .title--large {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .title--large {
+    font-size: 20px;
+  }
+}
+
+.title--white {
+  color: var(--color-white);
+}
+
+.title--dark {
+  color: var(--color-dark);
+}
+
+.title--w-medium {
+  font-weight: 500;
+}
+
+.title--w-semibold {
+  font-weight: 600;
+}
+
+.title--uppercase {
+  text-transform: uppercase;
+}
+
+.title--indent {
+  margin: 0 0 45px;
+}
+
+/* Text */
+
+.text {
+  font-family: var(--font-winston);
+  font-style: normal;
+  margin: 0;
+}
+
+.text--light-dark {
+  color: var(--color-light-dark);
+}
+
+.text--dark {
+  color: var(--color-dark);
+}
+
+.text--gray {
+  color: var(--color-gray);
+}
+
+.text--white {
+  color: var(--color-white);
+}
+
+.text--big {
+  font-size: calc(20px + 10 * ((100vw - 320px) / 880));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .text--big {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .text--big {
+    font-size: 20px;
+  }
+}
+
+.text--large {
+  font-size: calc(16px + 2 * ((100vw - 320px) / 880));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .text--large {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .text--large {
+    font-size: 16px;
+  }
+}
+
+.text--normal {
+  font-size: 16px;
+}
+
+.text--tiny {
+  font-size: 12px;
+}
+
+.text--w-light {
+  font-weight: 300;
+}
+
+.text--w-medium {
+  font-weight: 500;
+}
+
+.text--w-semibold {
+  font-weight: 600;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+/* ANOTHER MODULES */
+
+/* Swiper Slider Examples*/
+
+/* ANOTHER MODULES */
+
+/* Blocks */
+
+/* Page */
+
+.page {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  line-height: 1.35;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.page__container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  .hide-tablet {
+    display: none !important;
+  }
+
+  .title--indent {
+    margin: 0 0 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .container-full {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container-full {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

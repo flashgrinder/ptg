@@ -1,5 +1,10 @@
 :root {
 	--color-white: #FFFFFF;
-    --font-roboto: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-gotham: "GothamPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--color-dark: #2F2722;
+	--color-light-dark: #6D6864;
+	--color-gray: #CACACA;
+	--color-accent: #B8996A;
+	--color-accent-gradient: linear-gradient(0deg, #D1B180, #D1B180), linear-gradient(92.14deg, #D1B180 0%, #B8996A 100%);
+    --font-elmessiri: "El Messiri", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-winston: "Winston", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
