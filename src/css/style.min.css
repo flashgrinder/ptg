@@ -29,6 +29,15 @@
 
 @font-face {
   font-family: "Winston";
+  src: url("../fonts/Winston/Winston-Regular.eot");
+  src: url("../fonts/Winston/Winston-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Winston/Winston-Regular.woff2") format("woff2"), url("../fonts/Winston/Winston-Regular.woff") format("woff"), url("../fonts/Winston/Winston-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Winston";
   src: url("../fonts/Winston/Winston-Medium.eot");
   src: url("../fonts/Winston/Winston-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Winston/Winston-Medium.woff2") format("woff2"), url("../fonts/Winston/Winston-Medium.woff") format("woff"), url("../fonts/Winston/Winston-Medium.ttf") format("truetype");
   font-weight: 500;
@@ -48,6 +57,7 @@
 /* Variables */
 
 :root {
+  --color-hight-white: #F5F4F4;
   --color-white: #FFFFFF;
   --color-dark: #2F2722;
   --color-light-dark: #6D6864;
@@ -116,6 +126,10 @@ img {
 }
 
 /* Background */
+
+.bg--hight-white {
+  background-color: var(--color-hight-white);
+}
 
 .bg--white {
   background-color: var(--color-white);
@@ -268,12 +282,20 @@ img {
   font-size: 16px;
 }
 
+.text--small {
+  font-size: 14px;
+}
+
 .text--tiny {
   font-size: 12px;
 }
 
 .text--w-light {
   font-weight: 300;
+}
+
+.text--w-regular {
+  font-weight: normal;
 }
 
 .text--w-medium {
@@ -316,6 +338,99 @@ img {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+}
+
+/* Header */
+
+.header__upper-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.header__contacts,
+.header__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__contacts-link,
+.header__soc-link {
+  text-decoration: none;
+}
+
+.header__svg-icon,
+.header__soc-icon {
+  display: block;
+}
+
+.header__contacts-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__contacts-link ~ .header__contacts-link {
+  margin-left: 40px;
+}
+
+.header__num-phone,
+.header__text-email,
+.header__text-position {
+  margin-left: 10px;
+}
+
+.header__soc-link ~ .header__soc-link {
+  margin-left: 25px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+/* Menu */
+
+.menu {
+  font-family: var(--font-winston);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-list.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  position: relative;
+  list-style: none;
+}
+
+.header__menu-item.menu__item ~ .header__menu-item.menu__item {
+  margin-left: 25px;
+}
+
+.menu__link {
+  color: var(--color-dark);
+  text-decoration: none;
+  transition: border-bottom ease-in-out 0.15s;
+  border-bottom: 1px solid transparent;
+}
+
+.header__menu-item.is-active .menu__link {
+  color: var(--color-gray);
+}
+
+.menu__link:hover {
+  border-bottom: 1px solid var(--color-dark);
 }
 
 /* MEDIA QUERIES */

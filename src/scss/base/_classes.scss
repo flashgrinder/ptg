@@ -39,6 +39,9 @@
 /* Background */
 
 .bg {
+    &--hight-white {
+        background-color: var(--color-hight-white);
+    }
     &--white {
         background-color: var(--color-white);
     }
@@ -123,11 +126,17 @@
 	&--normal {
         font-size: 16px;
 	}
+	&--small {
+		font-size: 14px;
+	}
 	&--tiny {
 		font-size: 12px;
 	}
 	&--w-light {
 		font-weight: 300;
+	}
+	&--w-regular {
+		font-weight: normal;
 	}
 	&--w-medium {
 		font-weight: 500;

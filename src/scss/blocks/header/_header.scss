@@ -1,0 +1,49 @@
+.header__upper-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.header__contacts,
+.header__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__contacts-link,
+.header__soc-link {
+    text-decoration: none;
+}
+
+.header__svg-icon,
+.header__soc-icon {
+    display: block;
+}
+
+.header__contacts-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header__contacts-link ~ .header__contacts-link {
+    margin-left: 40px;
+}
+
+.header__num-phone,
+.header__text-email,
+.header__text-position {
+    margin-left: 10px;
+}
+
+.header__soc-link ~ .header__soc-link{
+    margin-left: 25px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}

@@ -1,0 +1,38 @@
+.menu {
+    font-family: var(--font-winston);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.menu__list {
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu-list.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    position: relative;
+    list-style: none;
+}
+
+.header__menu-item.menu__item ~ .header__menu-item.menu__item {
+    margin-left: 25px;
+}
+
+.menu__link {
+    color: var(--color-dark);
+    text-decoration: none;
+    transition: border-bottom ease-in-out .150s;
+    border-bottom: 1px solid transparent;
+}
+
+.header__menu-item.is-active .menu__link {
+    color: var(--color-gray);
+}
+
+.menu__link:hover {
+    border-bottom: 1px solid var(--color-dark);
+}

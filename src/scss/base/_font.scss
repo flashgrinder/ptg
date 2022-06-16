@@ -36,6 +36,18 @@
 
 @font-face {
 	font-family: 'Winston';
+	src: url('../fonts/Winston/Winston-Regular.eot');
+	src: url('../fonts/Winston/Winston-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Winston/Winston-Regular.woff2') format('woff2'),
+	url('../fonts/Winston/Winston-Regular.woff') format('woff'),
+	url('../fonts/Winston/Winston-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Winston';
 	src: url('../fonts/Winston/Winston-Medium.eot');
 	src: url('../fonts/Winston/Winston-Medium.eot?#iefix') format('embedded-opentype'),
 	url('../fonts/Winston/Winston-Medium.woff2') format('woff2'),
