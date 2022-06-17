@@ -22,6 +22,10 @@
     margin-left: 25px;
 }
 
+.header__menu-item.is-active .menu__link {
+    color: var(--color-gray);
+}
+
 .menu__link {
     color: var(--color-dark);
     text-decoration: none;
@@ -29,8 +33,22 @@
     border-bottom: 1px solid transparent;
 }
 
-.header__menu-item.is-active .menu__link {
-    color: var(--color-gray);
+.footer__menu-item.menu__item ~ .footer__menu-item.menu__item {
+    margin-top: 15px;
+}
+
+.footer__menu-list.menu__list .menu__link {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color ease-in-out .150s;
+}
+
+.footer__menu-item.is-active .menu__link {
+    color: var(--color-accent);
+}
+
+.footer__menu-item .menu__link:hover {
+    color: var(--color-accent);
 }
 
 .menu__link:hover {
