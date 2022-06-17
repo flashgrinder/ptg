@@ -1,0 +1,19 @@
+.info-block {
+    padding: 125px 0;
+}
+
+.info-block__inner {
+    display: grid;
+    grid-template-columns: minmax(400px, 665px) minmax(270px, 1fr);
+    grid-gap: 40px;
+    align-items: center;
+    z-index: 10;
+}
+
+.info-block__actions {
+    margin-top: 45px;
+}
+
+.info-block__btn ~ .info-block__btn {
+    margin-left: 25px;
+}

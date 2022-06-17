@@ -142,6 +142,7 @@ img {
 /* Links */
 
 .link {
+  color: var(--color-light-dark);
   text-decoration: none;
   transition: ease 0.3s;
 }
@@ -323,9 +324,9 @@ img {
 .page {
   position: relative;
   margin: 0;
-  font-family: var(--font-roboto);
+  font-family: var(--font-winston);
   font-size: 16px;
-  line-height: 1.35;
+  line-height: 1.25;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -338,6 +339,7 @@ img {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  flex: 1 0 auto;
 }
 
 /* Header */
@@ -449,6 +451,30 @@ img {
 
 .menu__link:hover {
   border-bottom: 1px solid var(--color-dark);
+}
+
+/* Info-block */
+
+.info-block {
+  padding: 125px 0;
+}
+
+.info-block__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(400px, 665px) 40px minmax(270px, 1fr);
+  grid-template-columns: minmax(400px, 665px) minmax(270px, 1fr);
+  grid-gap: 40px;
+  align-items: center;
+  z-index: 10;
+}
+
+.info-block__actions {
+  margin-top: 45px;
+}
+
+.info-block__btn ~ .info-block__btn {
+  margin-left: 25px;
 }
 
 /* Search-form */
