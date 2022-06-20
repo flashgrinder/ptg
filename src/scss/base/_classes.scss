@@ -45,9 +45,15 @@
     &--white {
         background-color: var(--color-white);
     }
-    &--color-accent-gradient {
-        background-color: var(--color-accent-gradient);
+    &--accent-gradient {
+        background: var(--color-accent-gradient);
     }
+}
+
+/* Block padding */
+
+.block-padding {
+    padding: 95px 0;
 }
 
 /* Links */
@@ -96,6 +102,10 @@
 .title--indent {
     margin: 0 0 45px;
     @include tablet(margin, 0 0 25px);
+}
+
+.title--indent-secondary {
+    margin: 0 0 25px;
 }
 
 /* Text */

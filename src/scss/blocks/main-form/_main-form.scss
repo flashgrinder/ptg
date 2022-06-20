@@ -1,0 +1,141 @@
+.form-page__form {
+    font-family: var(--font-winston);
+    margin-top: 45px;
+}
+
+.form-page__form.invalid .form-page__input {
+    border: 1px solid #FF0000;
+}
+
+.form-page__fields {
+    display: flex;
+    @include mobileXS-block {
+        flex-direction: column;
+    }
+}
+
+.form-page__field {
+    position: relative;
+    max-width: 275px;
+    width: 100%;
+    @include mobileXS(max-width, 100%);
+}
+
+.form-page__field ~ .form-page__field {
+    margin-left: 20px;
+    @include mobileXS-block {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+}
+
+.form-page__input {
+    background: #D3B586;
+    border-radius: 1px;
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 15px 30px;
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.form-page__input:hover,
+.form-page__input:target,
+.form-page__input:focus {
+    border: 1px solid var(--color-hight-white);
+}
+
+.form-page__input::placeholder {
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-page__actions {
+    position: relative;
+    margin-left: 20px;
+    @include mobileXS-block {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+}
+
+.form-page__btn {
+    @include mobileXS(width, 100%);
+}
+
+.form-page .wpcf7-not-valid-tip {
+    color: rgba(255, 0, 0, 0.8);
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    text-align: center;
+    max-width: fit-content;
+    padding: 2px 8px;
+    width: 100%;
+    @include mobile-block {
+        top: -30px;
+        padding: 5px 0;
+    }
+    @include mobileXS(top, -25px);
+}
+
+.form-page .wpcf7-spinner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 10px;
+}
+
+.form-page .wpcf7-spinner {
+    visibility: hidden;
+    display: inline-block;
+    background-color: #23282d;
+    opacity: 0.75;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 14px;
+}
+
+.form-page .wpcf7-spinner::before {
+    content: '';
+    position: absolute;
+    background-color: #fbfbfc;
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: 100%;
+    transform-origin: 8px 8px;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.form-page .wpcf7-response-output {
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+    max-width: max-content;
+    width: 100%;
+    text-align: center;
+    border-radius: 1px;
+}
+
+.wpcf7 .form.invalid .wpcf7-response-output, 
+.wpcf7 .form.unaccepted .wpcf7-response-output, 
+.wpcf7 .form.payment-required .wpcf7-response-output {
+    border-color: #ffb900;
+}
