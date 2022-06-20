@@ -170,13 +170,28 @@ img {
 /* Links */
 
 .link {
+  position: relative;
+  display: inline-block;
   color: var(--color-light-dark);
   text-decoration: none;
   transition: ease 0.3s;
 }
 
+.link::after {
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDE3IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDMuNUMwLjcyMzg1OCAzLjUgMC41IDMuNzIzODYgMC41IDRDMC41IDQuMjc2MTQgMC43MjM4NTggNC41IDEgNC41VjMuNVpNMTYuMzUzNiA0LjM1MzU1QzE2LjU0ODggNC4xNTgyOSAxNi41NDg4IDMuODQxNzEgMTYuMzUzNiAzLjY0NjQ1TDEzLjE3MTYgMC40NjQ0NjZDMTIuOTc2MyAwLjI2OTIwNCAxMi42NTk3IDAuMjY5MjA0IDEyLjQ2NDUgMC40NjQ0NjZDMTIuMjY5MiAwLjY1OTcyOCAxMi4yNjkyIDAuOTc2MzExIDEyLjQ2NDUgMS4xNzE1N0wxNS4yOTI5IDRMMTIuNDY0NSA2LjgyODQzQzEyLjI2OTIgNy4wMjM2OSAxMi4yNjkyIDcuMzQwMjcgMTIuNDY0NSA3LjUzNTUzQzEyLjY1OTcgNy43MzA4IDEyLjk3NjMgNy43MzA4IDEzLjE3MTYgNy41MzU1M0wxNi4zNTM2IDQuMzUzNTVaTTEgNC41SDE2VjMuNUgxVjQuNVoiIGZpbGw9IiM2RDY4NjQiLz4KPC9zdmc+Cg==");
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-58%);
+  transition: right 0.15s ease-in-out;
+}
+
 .link:hover {
   color: var(--color-accent);
+}
+
+.link:hover::after {
+  right: -30px;
 }
 
 /* Title */
