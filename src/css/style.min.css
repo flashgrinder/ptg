@@ -901,6 +901,17 @@ img {
     top: -30px;
     padding: 5px 0;
   }
+
+  .footer__bottom-line {
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer__copy {
+    position: relative;
+    transform: translateX(0);
+    left: auto;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -971,5 +982,42 @@ img {
 
   .form-page .wpcf7-not-valid-tip {
     top: -25px;
+  }
+
+  .footer__row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer__search-form {
+    margin-top: 45px;
+  }
+
+  .footer__columns {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 45px;
+    margin-top: 45px;
+  }
+
+  .footer__bottom-line {
+    flex-direction: column;
+    margin-top: 45px;
+  }
+
+  .footer__copy {
+    order: 1;
+    margin-top: 45px;
+  }
+
+  .footer__devsite {
+    text-align: left;
+    margin-right: auto;
+  }
+
+  .footer__devsite-text {
+    order: 1;
+    margin-right: 0;
+    margin-left: 15px;
   }
 }
