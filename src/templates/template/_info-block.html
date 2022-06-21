@@ -4,24 +4,41 @@
         <div class="info-block__inner">
             <div class="info-block__text">
                 <h1 class="info-block__heading title title--big title--dark title--w-medium title--uppercase title--indent">
-                    Patent
-                    <br>
-                    & Trademark group
+                    {% if title == "Главная" %}
+                        Patent
+                        <br>
+                        & Trademark group
+                    {% endif %}
+                    {% if title == "Эксперты" %}
+                        Эксперты
+                    {% endif %}
                 </h1>
                 <p class="info-block__descr text text--normal text--light-dark text--w-light">
-                    Защита вашей интеллектуальной собственности в судах, палате по патентным спорам, СИП.
-                    Регистрация товарных знаков в России и за рубежом
-                    Патентование изобретений, полезных моделей и промышленных образцов
-                    Регистрация программ ЭВМ и IP.
-                    Работа экспертов со сложными случаями и высокой гарантией успеха
+                    {% if title == "Главная" %}
+                        Защита вашей интеллектуальной собственности в судах, палате по патентным спорам, СИП.
+                        Регистрация товарных знаков в России и за рубежом
+                        Патентование изобретений, полезных моделей и промышленных образцов
+                        Регистрация программ ЭВМ и IP.
+                        Работа экспертов со сложными случаями и высокой гарантией успеха
+                    {% endif %}
+                    {% if title == "Эксперты" %}
+                        Команда Patent Trademark group - это патентные поверенные, юристы, судебные адвокаты, дипломированные оценщики интеллектуальной собственности, аналитики в области интеллектуальных прав
+                    {% endif %}
                 </p>
                 <div class="info-block__actions">
-                    <a href="#" class="info-block__btn button button--primary" data-modal="#modal-services">
+                    {% if title == "Главная" %}
+                    <a href="#" class="info-block__btn button button--primary">
                         Посмотреть услуги
                     </a>
                     <a href="#" class="info-block__more link" data-modal="#modal">
                         Узнать подробнее о нас
                     </a>
+                    {% endif %}
+                    {% if title == "Эксперты" %}
+                        <a href="#" class="info-block__btn button button--primary" data-modal="#modal-services">
+                            Получить консультацию
+                        </a>
+                    {% endif %}
                 </div>
             </div>
             <div class="info-block__pic">
