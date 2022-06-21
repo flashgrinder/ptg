@@ -1304,6 +1304,10 @@ img {
     display: none !important;
   }
 
+  .block-padding {
+    padding: 50px 0;
+  }
+
   .form-page .wpcf7-not-valid-tip {
     top: -30px;
     padding: 5px 0;
