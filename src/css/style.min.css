@@ -1196,6 +1196,19 @@ img {
   margin-top: 25px;
 }
 
+/* Popular-services */
+
+.popular-services__items {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.33fr));
+  grid-gap: 20px;
+}
+
+.popular-services__link {
+  color: var(--color-dark);
+}
+
 /* Footer */
 
 .footer {
@@ -1268,6 +1281,11 @@ img {
 
   .title--indent {
     margin: 0 0 25px;
+  }
+
+  .popular-services__items {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 60px;
   }
 }
 
@@ -1385,6 +1403,11 @@ img {
 
   .form-page .wpcf7-not-valid-tip {
     top: -25px;
+  }
+
+  .popular-services__items {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 30px;
   }
 
   .footer__row {

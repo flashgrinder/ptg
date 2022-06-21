@@ -1,0 +1,17 @@
+.popular-services__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.33fr));
+    grid-gap: 20px;
+    @include tablet-block {
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        grid-gap: 60px;
+    }
+    @include mobileXS-block {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 30px;
+    }
+}
+
+.popular-services__link {
+    color: var(--color-dark);
+}
