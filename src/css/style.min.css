@@ -1209,6 +1209,36 @@ img {
   color: var(--color-dark);
 }
 
+/* Contacts */
+
+.contacts__info {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 200px));
+  grid-gap: 30px;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+.contacts__text {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+.contacts__item-info:hover .contacts__text {
+  color: var(--color-accent);
+}
+
+.contacts__map canvas {
+  filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+}
+
 /* Footer */
 
 .footer {
@@ -1412,6 +1442,11 @@ img {
   .popular-services__items {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-gap: 30px;
+  }
+
+  .contacts__info {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .footer__row {

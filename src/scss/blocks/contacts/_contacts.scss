@@ -1,0 +1,27 @@
+.contacts__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 200px));
+    grid-gap: 30px;
+    justify-content: space-between;
+    margin-top: 45px;
+    @include mobileXS(grid-template-columns, 1fr);
+}
+
+.contacts__text {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    transition: color .150s ease-in-out;
+}
+
+.contacts__item-info:hover .contacts__text {
+    color: var(--color-accent);
+}
+
+.contacts__map canvas {
+	filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}
