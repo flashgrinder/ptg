@@ -1239,6 +1239,43 @@ img {
   -o-filter: grayscale(1);
 }
 
+/* Page-404 */
+
+.page-404__inner {
+  position: relative;
+  height: calc(100vh - 134px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-404__actions {
+  display: flex;
+  align-items: center;
+}
+
+.page-404__link {
+  margin-left: 25px;
+}
+
+.page-404__decor {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.page-404__svg-decor {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 /* Footer */
 
 .footer {
