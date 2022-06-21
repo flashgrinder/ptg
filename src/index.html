@@ -8,7 +8,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#000" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
-    <title>Главная</title>
+    <title>Новости</title>
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
@@ -32,6 +32,141 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal hystmodal" id="modal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="modal__body hystmodal__window" role="modal window contact" aria-modal="true">
+                <div class="modal__close" data-hystclose>
+                    <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3 class="modal__title title title--large title--dark title--w-semibold center">
+
+                Форма обратной связи
+
+            </h3>
+                <div class="wpcf7">
+                    <form action="" class="modal__form invalid wpcf7-form">
+                        <div class="modal__field">
+                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
+                                Укажите ваше имя
+                            </p>
+                            <input type="text" class="modal__input" placeholder="Ваше имя">
+                        </div>
+                        <div class="modal__field">
+                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
+                                Укажите ваш номер телефона
+                            </p>
+                            <input type="tel" class="modal__input" placeholder="Ваш телефон">
+                        </div>
+                        <div class="modal__protect">
+                            <span class="modal__icon-protect">
+
+                            <svg class="modal__svg-protect" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                <path d="M12.75 8.25H5.25C4.42157 8.25 3.75 8.92157 3.75 9.75V14.25C3.75 15.0784 4.42157 15.75 5.25 15.75H12.75C13.5784 15.75 14.25 15.0784 14.25 14.25V9.75C14.25 8.92157 13.5784 8.25 12.75 8.25Z" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
+
+                                <path d="M9 12.75C9.41421 12.75 9.75 12.4142 9.75 12C9.75 11.5858 9.41421 11.25 9 11.25C8.58579 11.25 8.25 11.5858 8.25 12C8.25 12.4142 8.58579 12.75 9 12.75Z" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
+
+                                <path d="M6 8.25V5.25C6 4.45435 6.31607 3.69129 6.87868 3.12868C7.44129 2.56607 8.20435 2.25 9 2.25C9.79565 2.25 10.5587 2.56607 11.1213 3.12868C11.6839 3.69129 12 4.45435 12 5.25V8.25" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
+
+                            </svg>
+
+                        </span>
+                            <span class="modal__text-protect text text--tiny text--light-dark text--w-light">
+
+                            Не беспокойтесь, ваши данные под надежной защитой
+
+                        </span>
+                        </div>
+                        <div class="modal__actions">
+                            <input type="button" value="Отправить" class="modal__btn button button--primary">
+                            <span class="wpcf7-spinner"></span>
+                        </div>
+                        <div class="wpcf7-response-output" aria-hidden="true">
+                            Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Modal -->
+
+    <!-- Modal-services -->
+    <div class="modal hystmodal" id="modal-services" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="modal__body hystmodal__window" role="modal window services" aria-modal="true">
+                <div class="modal__close" data-hystclose>
+                    <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3 class="modal__title title title--large title--dark title--w-semibold center">
+
+                Форма обратной связи
+
+            </h3>
+                <div class="wpcf7">
+                    <form action="" class="modal__form invalid wpcf7-form">
+                        <div class="modal__field">
+                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
+                                Укажите ваше имя
+                            </p>
+                            <input type="text" class="modal__input" placeholder="Ваше имя">
+                        </div>
+                        <div class="modal__field">
+                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
+                                Укажите ваш номер телефона
+                            </p>
+                            <input type="tel" class="modal__input" placeholder="Ваш телефон">
+                        </div>
+                        <div class="modal__field">
+                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
+                                Вас заинтересовала услуга
+                            </p>
+                            <input type="email" class="modal__input" placeholder="Патентование">
+                        </div>
+                        <div class="modal__field">
+                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
+                                Дополнительная информация
+                            </p>
+                            <textarea class="modal__input modal__input--textarea" cols="40" row="10" placeholder="Комментарий..."></textarea>
+                        </div>
+                        <div class="modal__protect">
+                            <span class="modal__icon-protect">
+
+                            <svg class="modal__svg-protect" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                <path d="M12.75 8.25H5.25C4.42157 8.25 3.75 8.92157 3.75 9.75V14.25C3.75 15.0784 4.42157 15.75 5.25 15.75H12.75C13.5784 15.75 14.25 15.0784 14.25 14.25V9.75C14.25 8.92157 13.5784 8.25 12.75 8.25Z" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
+
+                                <path d="M9 12.75C9.41421 12.75 9.75 12.4142 9.75 12C9.75 11.5858 9.41421 11.25 9 11.25C8.58579 11.25 8.25 11.5858 8.25 12C8.25 12.4142 8.58579 12.75 9 12.75Z" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
+
+                                <path d="M6 8.25V5.25C6 4.45435 6.31607 3.69129 6.87868 3.12868C7.44129 2.56607 8.20435 2.25 9 2.25C9.79565 2.25 10.5587 2.56607 11.1213 3.12868C11.6839 3.69129 12 4.45435 12 5.25V8.25" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
+
+                            </svg>
+
+                        </span>
+                            <span class="modal__text-protect text text--tiny text--light-dark text--w-light">
+
+                            Не беспокойтесь, ваши данные под надежной защитой
+
+                        </span>
+                        </div>
+                        <div class="modal__actions">
+                            <input type="button" value="Отправить" class="modal__btn button button--primary">
+                            <span class="wpcf7-spinner"></span>
+                        </div>
+                        <div class="wpcf7-response-output" aria-hidden="true">
+                            Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Modal-services -->
     <header class="header">
         <div class="header__outer bg--hight-white">
             <div class="header__upper-line container">
@@ -166,108 +301,191 @@
     <main class="main page__container">
 
 
-        <!-- Info-block -->
-        <section class="info-block">
-            <div class="info-block__body container">
-                <div class="info-block__inner">
-                    <div class="info-block__text">
-                        <h1 class="info-block__heading title title--huge title--dark title--w-bold title--indent">
+        <!-- News-list -->
+        <section class="news-list">
+            <div class="news-list__body container">
+                <div class="news-list__items">
+                    <article class="news-list__item news-list__item--wide">
+                        <aside class="news-list__aside">
+                            <div class="news-list__pic">
+                                <img src="https://picsum.photos/800" alt="" class="news-list__thumb">
+                            </div>
+                        </aside>
+                        <div class="news-list__inner">
+                            <header class="news-list__header">
+                                <h2 class="news-list__title title title--large title--dark title--w-semibold title--uppercase">
 
-                    Главная
+                                <a href="#" class="news-list__link">
 
-                </h1>
-                        <p class="info-block__descr text text--large text--dark text--w-light">
+                                    Внезапно, чистосердечное признание облегчает душу
 
-                            Актуальные новости компании и мира из области IT
+                                </a> 
 
-                        </p>
-                        <div class="info-block__actions">
-
-                            <a href="#news" class="info-block__btn button button--primary">
-
-                            Посмотреть новости
-
-                        </a>
-
+                            </h2>
+                            </header>
+                            <footer class="news-list__footer">
+                                <p class="news-list__excerpt text text--normal text--light-dark text--w-light">
+                                    В целом, конечно, повышение уровня гражданского сознания не оставляет шанса для экономической целесообразности принимаемых решений. В своём стремлении улучшить пользовательский опыт мы упускаем, что стремящиеся...
+                                </p>
+                            </footer>
                         </div>
-                    </div>
-                    <div class="info-block__pic">
+                    </article>
+                    <article class="news-list__item">
+                        <aside class="news-list__aside">
+                            <div class="news-list__pic">
+                                <img src="https://picsum.photos/300" alt="" class="news-list__thumb">
+                            </div>
+                        </aside>
+                        <div class="news-list__inner">
+                            <header class="news-list__header">
+                                <div class="news-list__meta text text--normal text--gray text--w-light">
+                                    <span class="news-list__date">
 
-                        <svg class="info-block__svg" width="570" height="439" viewBox="0 0 570 439" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="570" height="439" rx="9.5" fill="url(#paint0_linear_2662_6800)" fill-opacity="0.15" />
-                            <g clip-path="url(#clip0_2662_6800)">
-                                <rect x="52" y="314" width="148" height="107" rx="5" fill="white" fill-opacity="0.15" />
-                                <rect x="209.957" y="362.941" width="272.077" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                                <rect x="209.957" y="370.967" width="307.792" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                                <rect x="209.957" y="348.896" width="107.948" height="8.02586" rx="4.01293" fill="white" fill-opacity="0.15" />
-                                <rect x="209.957" y="399.859" width="66.2134" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                                <rect x="209.957" y="325.621" width="42.9384" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                                <path d="M258.914 324.016L258.914 331.239" stroke="white" stroke-opacity="0.02" stroke-width="0.401293" stroke-linecap="round" stroke-linejoin="round" />
-                                <rect x="264.934" y="325.621" width="42.9384" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                                <path d="M313.893 324.016L313.893 331.239" stroke="white" stroke-opacity="0.02" stroke-width="0.401293" stroke-linecap="round" stroke-linejoin="round" />
-                                <rect x="319.912" y="325.621" width="42.9384" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                                <path d="M368.869 324.016L368.869 331.239" stroke="white" stroke-opacity="0.02" stroke-width="0.401293" stroke-linecap="round" stroke-linejoin="round" />
-                                <rect x="374.889" y="325.621" width="42.9384" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                            </g>
-                            <rect x="52.25" y="24.25" width="465.5" height="182.588" rx="5" fill="white" fill-opacity="0.15" />
-                            <rect x="52.25" y="253.789" width="393.267" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                            <rect x="52.25" y="261.815" width="445.034" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                            <rect x="52.25" y="239.744" width="107.948" height="8.02586" rx="4.01293" fill="white" fill-opacity="0.15" />
-                            <rect x="52.25" y="290.709" width="66.2134" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                            <rect x="52.25" y="216.47" width="42.9384" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                            <path d="M101.207 214.864L101.207 222.088" stroke="white" stroke-opacity="0.15" stroke-width="0.401293" stroke-linecap="round" stroke-linejoin="round" />
-                            <rect x="107.227" y="216.47" width="42.9384" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                            <path d="M156.186 214.864L156.186 222.088" stroke="white" stroke-opacity="0.15" stroke-width="0.401293" stroke-linecap="round" stroke-linejoin="round" />
-                            <rect x="162.205" y="216.47" width="42.9384" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                            <path d="M211.162 214.864L211.162 222.088" stroke="white" stroke-opacity="0.15" stroke-width="0.401293" stroke-linecap="round" stroke-linejoin="round" />
-                            <rect x="217.182" y="216.47" width="42.9384" height="4.01293" rx="2.00647" fill="white" fill-opacity="0.15" />
-                            <defs>
-                                <linearGradient id="paint0_linear_2662_6800" x1="285" y1="57.948" x2="285" y2="439" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="white" stop-opacity="0.45" />
-                                    <stop offset="1" stop-color="white" stop-opacity="0" />
-                                </linearGradient>
-                                <clipPath id="clip0_2662_6800">
-                                    <rect x="52.25" y="313.983" width="465.5" height="107.145" rx="4.01293" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
+                                    2 мая 2022
 
-                    </div>
-                </div>
-                <div class="info-block__decor">
-                    <svg class="info-block__elips" width="2524" height="1511" viewBox="0 0 2524 1511" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_f_3418_19793)">
-                            <path d="M1216.74 592.381C1548.94 592.381 1818.24 623.42 1818.24 661.709C1818.24 699.998 1548.94 731.038 1216.74 731.038C884.546 731.038 615.245 699.998 615.245 661.709C615.245 623.42 884.546 592.381 1216.74 592.381Z" fill="#E82F84" fill-opacity="0.45"
-                            />
-                            <path d="M1243.78 688.458C1633.98 584.16 1958.36 529.592 1968.29 566.576C1978.23 603.561 1669.96 718.093 1279.75 822.39C889.546 926.688 565.168 981.256 555.234 944.272C545.299 907.287 853.57 792.755 1243.78 688.458Z" fill="#E82F84" fill-opacity="0.25"
-                            />
-                        </g>
-                        <defs>
-                            <filter id="filter0_f_3418_19793" x="0" y="0" width="2523.53" height="1510.85" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                                <feGaussianBlur stdDeviation="277.5" result="effect1_foregroundBlur_3418_19793" />
-                            </filter>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="info-block__scroll">
-                    <svg class="info-block__scroll-icon" width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 5.05546V8.66032M7 1C5.4087 1 3.88258 1.74179 2.75736 3.06218C1.63214 4.38258 1 6.17341 1 8.04073V16.4896C1 18.3569 1.63214 20.1478 2.75736 21.4682C3.88258 22.7886 5.4087 23.5303 7 23.5303C8.5913 23.5303 10.1174 22.7886 11.2426 21.4682C12.3679 20.1478 13 18.3569 13 16.4896V8.04073C13 6.17341 12.3679 4.38258 11.2426 3.06218C10.1174 1.74179 8.5913 1 7 1Z"
-                        stroke="#F0F6F7" stroke-width="1.10645" stroke-linecap="round" />
-                    </svg>
-                    <div class="info-block__scroll-text text text--small text--white text--w-light text--uppercase">
-                        Scroll
-                    </div>
+                                </span>
+                                    <span class="news-list__views">
+
+                                    17384 просмотра
+
+                                </span>
+                                </div>
+                                <h2 class="news-list__title title title--large title--dark title--w-semibold title--uppercase">
+
+                                <a href="#" class="news-list__link">
+
+                                    Британские ученые заявили, что небо темнеет
+
+                                </a>
+
+                            </h2>
+                            </header>
+                            <footer class="news-list__footer">
+                                <p class="news-list__excerpt text text--normal text--light-dark text--w-light">
+                                    С другой стороны, разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации приоритизации разума над эмоциями...
+                                </p>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="news-list__item">
+                        <aside class="news-list__aside">
+                            <div class="news-list__pic">
+                                <img src="https://picsum.photos/350" alt="" class="news-list__thumb">
+                            </div>
+                        </aside>
+                        <div class="news-list__inner">
+                            <header class="news-list__header">
+                                <div class="news-list__meta text text--normal text--gray text--w-light">
+                                    <span class="news-list__date">
+
+                                    26 июня 2020
+
+                                </span>
+                                    <span class="news-list__views">
+
+                                    12567 просмотра
+
+                                </span>
+                                </div>
+                                <h2 class="news-list__title title title--large title--dark title--w-semibold title--uppercase">
+
+                                <a href="#" class="news-list__link">
+
+                                    Смешно, но герцог графства коронован
+
+                                </a> 
+
+                            </h2>
+                            </header>
+                            <footer class="news-list__footer">
+                                <p class="news-list__excerpt text text--normal text--light-dark text--w-light">
+                                    С другой стороны, синтетическое тестирование предоставляет широкие возможности для переосмысления внешнеэкономических политик. Повседневная практика показывает, что выбранный нами инновационный путь...
+                                </p>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="news-list__item">
+                        <aside class="news-list__aside">
+                            <div class="news-list__pic">
+                                <img src="https://picsum.photos/500" alt="" class="news-list__thumb">
+                            </div>
+                        </aside>
+                        <div class="news-list__inner">
+                            <header class="news-list__header">
+                                <div class="news-list__meta text text--normal text--gray text--w-light">
+                                    <span class="news-list__date">
+
+                                    15 декабря 2019
+
+                                </span>
+                                    <span class="news-list__views">
+
+                                    9345 просмотра
+
+                                </span>
+                                </div>
+                                <h2 class="news-list__title title title--large title--dark title--w-semibold title--uppercase">
+
+                                <a href="#" class="news-list__link">
+
+                                    Внезапно, жизнь прекрасна
+
+                                </a> 
+
+                            </h2>
+                            </header>
+                            <footer class="news-list__footer">
+                                <p class="news-list__excerpt text text--normal text--light-dark text--w-light">
+                                    Вот вам яркий пример современных тенденций - базовый вектор развития говорит о возможностях экспериментов, поражающих по своей масштабности и грандиозности...
+                                </p>
+                            </footer>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
-        <!-- /. Info-block -->
+        <!-- /. News-list -->
+        <!-- form-page -->
+        <section class="form-page block-padding bg--accent-gradient">
+            <div class="form-page__body container">
+                <h2 class="form-page__heading title title--big title--white title--w-semibold title--uppercase title--indent-secondary">
+
+            Не знаете с чего начать?
+
+        </h2>
+                <p class="form-page__descr text text--normal text--white text--w-regular">
+                    Запишитесь на бесплатную консультацию
+                </p>
+                <div class="wpcf7">
+                    <form method="post" class="form-page__form form invalid">
+                        <div class="form-page__fields">
+                            <div class="form-page__field">
+                                <input type="text" class="form-page__input" placeholder="Ваше имя">
+                                <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
+                            </div>
+                            <div class="form-page__field">
+                                <input type="tel" class="form-page__input" placeholder="Ваш телефон">
+                                <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
+                            </div>
+                            <div class="form-page__actions">
+                                <input type="submit" value="Получить консультация" class="form-page__btn button button--secondary">
+                                <span class="wpcf7-spinner"></span>
+                            </div>
+                        </div>
+                        <div class="wpcf7-response-output" aria-hidden="true">
+                            Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- /. form-page -->
 
 
     </main>
     <!-- /. MAIN -->
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="foooter__body container">
             <div class="footer__row">
@@ -387,6 +605,7 @@
             </div>
         </div>
     </footer>
+    <!-- /. Footer -->
 
     <script src="js/scripts.min.js"></script>
 </body>
