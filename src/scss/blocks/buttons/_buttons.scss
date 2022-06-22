@@ -36,6 +36,45 @@
     opacity: .45;
 }
 
+/* Button primary icon */
+.button--primary-icon {
+    color: var(--color-white);
+    background: var(--color-low-accent);
+    display: inline-flex;
+    align-items: center;
+}
+
+.button--primary-icon .button__icon--left {
+    margin-right: 10px;
+}
+
+.button--primary-icon .button__icon-svg {
+    display: inline-block;
+}
+
+.button--primary-icon .button__icon-svg {
+    stroke: var(--color-white);
+}
+
+.button--primary-icon:hover .button__icon-svg,
+.button--primary-icon:focus .button__icon-svg,
+.button--primary-icon:active .button__icon-svg,
+.button--primary-icon:target .button__icon-svg {
+    stroke: var(--color-accent);
+}
+
+.button--primary-icon:hover,
+.button--primary-icon:focus,
+.button--primary-icon:active,
+.button--primary-icon:target {
+    color: var(--color-accent);
+    background: var(--color-white);
+}
+
+.button--primary-icon:disabled {
+    opacity: .45;
+}
+
 /* Button secondary */
 .button--secondary {
     color: var(--color-accent);
