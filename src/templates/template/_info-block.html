@@ -56,11 +56,14 @@
                 </div>
             </div>
             <div class="info-block__pic">
-                {% if title == "Главная" and title == "Эксперты" %}
+                {% if title == "Главная" %}
                     <img src="img/info-block/front-page.svg" alt="" class="info-block__img">
-                {% endif %}
-                {% if title == "Контакты" %}
+                {% elif title == "Эксперты" %}
+                    <img src="img/info-block/front-page.svg" alt="" class="info-block__img">
+                {% elif title == "Контакты" %}
                     <img src="img/info-block/logo-contacts.svg" alt="" class="info-block__img">
+                {% else %}
+                    <img src="img/info-block/front-page.svg" alt="" class="info-block__img">
                 {% endif %}
             </div>
         </div>
