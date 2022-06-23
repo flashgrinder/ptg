@@ -15,6 +15,12 @@
     max-height: 100%;
 }
 
+.form-page__heading,
+.form-page__descr,
+.form-page__form {
+    transform: translate(0, 0);
+}
+
 .form-page__form {
     font-family: var(--font-winston);
     margin-top: 45px;
