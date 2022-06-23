@@ -15,6 +15,9 @@
                     {% if title == "Контакты" %}
                         Контакты
                     {% endif %}
+                    {% if title == "Регистрация товарных знаков" %}
+                        Регистрация товарных знаков
+                    {% endif %}
                 </h1>
                 <p class="info-block__descr text text--normal text--light-dark text--w-light">
                     {% if title == "Главная" %}
@@ -29,6 +32,12 @@
                     {% endif %}
                     {% if title == "Контакты" %}
                         Patent Trademark group - агентство, которое работает со своими клиентами онлайн. Но также вы можете посетить наш офис
+                    {% endif %}
+                    {% if title == "Регистрация товарных знаков" %}
+                        Регистрация товарного знака (ТЗ) - официальная государственная процедура, которая дает каждому предпринимателю исключительное право на интеллектуальную собственность. Свидетельство выдается на 10 лет с правом продления.
+                        <br>
+                        <br>
+                        Товарный знак как нематериальный актив можно продать, сдать в аренду, получить под него кредит в банке. Зарегистрированный ТЗ дает право презентовать себя на крупных торговых площадках, участвовать в тендерах и госзакупках, продавать свой продукт в федеральных сетях, а также масштабировать свой бизнес, создавая франшизу.
                     {% endif %}
                 </p>
                 <div class="info-block__actions">
@@ -53,6 +62,11 @@
                             Перезвоните мне
                         </a>
                     {% endif %}
+                    {% if title == "Регистрация товарных знаков" %}
+                        <a href="#" class="info-block__btn button button--primary" data-modal="#modal-services">
+                            Оставить заявку
+                        </a>
+                    {% endif %}
                 </div>
             </div>
             <div class="info-block__pic">
@@ -62,6 +76,8 @@
                     <img src="img/info-block/front-page.svg" alt="" class="info-block__img">
                 {% elif title == "Контакты" %}
                     <img src="img/info-block/logo-contacts.svg" alt="" class="info-block__img">
+                {% elif title == "Регистрация товарных знаков" %}
+                    <img src="img/info-block/register-mark.svg" alt="" class="info-block__img">
                 {% else %}
                     <img src="img/info-block/front-page.svg" alt="" class="info-block__img">
                 {% endif %}
