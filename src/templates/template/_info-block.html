@@ -8,43 +8,12 @@
                         Patent
                         <br>
                         & Trademark group
-                    {% endif %}
-                    {% if title == "Эксперты" %}
-                        Эксперты
-                    {% endif %}
-                    {% if title == "Контакты" %}
-                        Контакты
-                    {% endif %}
-                    {% if title == "Регистрация товарных знаков" %}
-                        Регистрация товарных знаков
-                    {% endif %}
-                    {% if title == "Патентование" %}
-                        Патентование
+                    {% else %}
+                        {{title}}
                     {% endif %}
                 </h1>
                 <p class="info-block__descr text text--normal text--light-dark text--w-light">
-                    {% if title == "Главная" %}
-                        Защита вашей интеллектуальной собственности в судах, палате по патентным спорам, СИП.
-                        Регистрация товарных знаков в России и за рубежом
-                        Патентование изобретений, полезных моделей и промышленных образцов
-                        Регистрация программ ЭВМ и IP.
-                        Работа экспертов со сложными случаями и высокой гарантией успеха
-                    {% endif %}
-                    {% if title == "Эксперты" %}
-                        Команда Patent Trademark group - это патентные поверенные, юристы, судебные адвокаты, дипломированные оценщики интеллектуальной собственности, аналитики в области интеллектуальных прав
-                    {% endif %}
-                    {% if title == "Контакты" %}
-                        Patent Trademark group - агентство, которое работает со своими клиентами онлайн. Но также вы можете посетить наш офис
-                    {% endif %}
-                    {% if title == "Регистрация товарных знаков" %}
-                        Регистрация товарного знака (ТЗ) - официальная государственная процедура, которая дает каждому предпринимателю исключительное право на интеллектуальную собственность. Свидетельство выдается на 10 лет с правом продления.
-                        <br>
-                        <br>
-                        Товарный знак как нематериальный актив можно продать, сдать в аренду, получить под него кредит в банке. Зарегистрированный ТЗ дает право презентовать себя на крупных торговых площадках, участвовать в тендерах и госзакупках, продавать свой продукт в федеральных сетях, а также масштабировать свой бизнес, создавая франшизу.
-                    {% endif %}
-                    {% if title == "Патентование" %}
-                        Патент - документ, установленного образца, обозначающий принадлежность исключительного права патентообладателю на изобретение, полезную модель или промышленный образец.
-                    {% endif %}
+                    {{pageDescr}}
                 </p>
                 <div class="info-block__actions">
                     {% if title == "Главная" %}
@@ -78,6 +47,21 @@
                             Оставить заявку
                         </a>
                     {% endif %}
+                    {% if title == "Защита авторских прав" %}
+                        <a href="#" class="info-block__btn button button--primary" data-modal="#modal-services">
+                            Оставить заявку
+                        </a>
+                    {% endif %}
+                    {% if title == "Представление интересов в суде, палате по патентным спорам, СИП" %}
+                        <a href="#" class="info-block__btn button button--primary" data-modal="#modal-services">
+                            Оставить заявку
+                        </a>
+                    {% endif %}
+                    {% if title == "Регистрация программ ЭВМ и IP" %}
+                        <a href="#" class="info-block__btn button button--primary" data-modal="#modal-services">
+                            Оставить заявку
+                        </a>
+                    {% endif %}
                 </div>
             </div>
             <div class="info-block__pic">
@@ -91,6 +75,12 @@
                     <img src="img/info-block/register-mark.svg" alt="" class="info-block__img">
                 {% elif title == "Патентование" %}
                     <img src="img/info-block/patent.svg" alt="" class="info-block__img">
+                {% elif title == "Защита авторских прав" %}
+                    <img src="img/info-block/defender-author.svg" alt="" class="info-block__img">
+                {% elif title == "Представление интересов в суде, палате по патентным спорам, СИП" %}
+                    <img src="img/info-block/court.svg" alt="" class="info-block__img">
+                {% elif title == "Регистрация программ ЭВМ и IP" %}
+                    <img src="img/info-block/evm-programm.svg" alt="" class="info-block__img">
                 {% else %}
                     <img src="img/info-block/front-page.svg" alt="" class="info-block__img">
                 {% endif %}
