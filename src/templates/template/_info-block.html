@@ -18,6 +18,9 @@
                     {% if title == "Регистрация товарных знаков" %}
                         Регистрация товарных знаков
                     {% endif %}
+                    {% if title == "Патентование" %}
+                        Патентование
+                    {% endif %}
                 </h1>
                 <p class="info-block__descr text text--normal text--light-dark text--w-light">
                     {% if title == "Главная" %}
@@ -38,6 +41,9 @@
                         <br>
                         <br>
                         Товарный знак как нематериальный актив можно продать, сдать в аренду, получить под него кредит в банке. Зарегистрированный ТЗ дает право презентовать себя на крупных торговых площадках, участвовать в тендерах и госзакупках, продавать свой продукт в федеральных сетях, а также масштабировать свой бизнес, создавая франшизу.
+                    {% endif %}
+                    {% if title == "Патентование" %}
+                        Патент - документ, установленного образца, обозначающий принадлежность исключительного права патентообладателю на изобретение, полезную модель или промышленный образец.
                     {% endif %}
                 </p>
                 <div class="info-block__actions">
@@ -67,6 +73,11 @@
                             Оставить заявку
                         </a>
                     {% endif %}
+                    {% if title == "Патентование" %}
+                        <a href="#" class="info-block__btn button button--primary" data-modal="#modal-services">
+                            Оставить заявку
+                        </a>
+                    {% endif %}
                 </div>
             </div>
             <div class="info-block__pic">
@@ -78,6 +89,8 @@
                     <img src="img/info-block/logo-contacts.svg" alt="" class="info-block__img">
                 {% elif title == "Регистрация товарных знаков" %}
                     <img src="img/info-block/register-mark.svg" alt="" class="info-block__img">
+                {% elif title == "Патентование" %}
+                    <img src="img/info-block/patent.svg" alt="" class="info-block__img">
                 {% else %}
                     <img src="img/info-block/front-page.svg" alt="" class="info-block__img">
                 {% endif %}
