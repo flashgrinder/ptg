@@ -11,6 +11,11 @@
 
 .header__menu-list.menu__list {
     display: flex;
+    @include mobile-block {
+        margin-top: 45px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .menu__item {
@@ -20,17 +25,29 @@
 
 .header__menu-item.menu__item ~ .header__menu-item.menu__item {
     margin-left: 25px;
+    @include mobile-block {
+        margin-left: 0;
+    }
 }
 
 .header__menu-item.is-active .menu__link {
     color: var(--color-gray);
+    @include mobile(color, var(--color-accent));
 }
 
 .menu__link {
     color: var(--color-dark);
     text-decoration: none;
-    transition: border-bottom ease-in-out .150s;
-    border-bottom: 1px solid transparent;
+    transition: color ease-in-out .150s;
+}
+
+.header__menu-item .menu__link {
+    @include mobile(color, var(--color-white));
+}
+
+.header__menu-item .menu__link:hover {
+    color: var(--color-gray);
+    @include mobile(color, var(--color-accent));
 }
 
 .footer__menu-item.menu__item ~ .footer__menu-item.menu__item {
@@ -45,12 +62,10 @@
 
 .footer__menu-item.is-active .menu__link {
     color: var(--color-accent);
+    @include mobile(color, var(--color-gray));
 }
 
 .footer__menu-item .menu__link:hover {
     color: var(--color-accent);
-}
-
-.menu__link:hover {
-    border-bottom: 1px solid var(--color-dark);
+    @include mobile(color, var(--color-gray));
 }
