@@ -1,4 +1,4 @@
-<?php /* Template Name: Эксперты */?>
+<?php /* Template Name: Контакты */?>
 <?php get_header(); ?>
 
     <!-- Info-block -->
