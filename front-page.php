@@ -99,7 +99,7 @@
     </section>
     <!-- /. Advantages -->
     <!-- Popular-services -->
-    <section class="popular-services block-padding">
+    <section id="services" class="popular-services block-padding">
         <div class="popular-services__body container">
             <div class="popular-services__decor">
                 <svg class="popular-services__logo-decor" width="455" height="516" viewBox="0 0 455 516" fill="none" xmlns="http://www.w3.org/2000/svg">
