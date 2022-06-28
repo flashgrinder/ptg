@@ -1,0 +1,28 @@
+.text-block__item-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mobileXS-block {
+        flex-direction: column;
+    }
+}
+
+.text-block__column-icons ~ .text-block__column-icons {
+    @include mobileXS-block {
+        margin-top: 25px;
+    }
+}
+
+.text-block__item-icon {
+    display: flex;
+    align-items: center;
+}
+
+.text-block__item-icon  ~ .text-block__item-icon{
+    margin-top: 25px;
+}
+
+.text-block__icon {
+    display: block;
+    margin-right: 10px;
+}
