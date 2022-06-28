@@ -2164,6 +2164,52 @@ img {
   margin-top: 25px;
 }
 
+/* Stages */
+
+.stages__row {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 0.33fr));
+  grid-gap: 20px;
+}
+
+.stages__row.stages__row--one .stages__item {
+  background: #FAFAFA;
+}
+
+.stages__row.stages__row--two .stages__item {
+  background: #F5F4F4;
+}
+
+.stages__row.stages__row--competencies .stages__item:first-child {
+  background: #FAFAFA;
+}
+
+.stages__row.stages__row--competencies .stages__item:nth-child(2) {
+  background: #F5F4F4;
+}
+
+.stages__row.stages__row--competencies .stages__item:last-child {
+  background: #F0F0F0;
+}
+
+.stages__item {
+  padding: 15px 25px 25px;
+}
+
+.stages__num,
+.stages__days {
+  display: inline-block;
+}
+
+.stages__days {
+  margin-left: 15px;
+}
+
+.stages__title {
+  margin-top: 22px;
+}
+
 /* Footer */
 
 .footer {
@@ -2446,6 +2492,12 @@ img {
   .period__inner {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .stages__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
   }
 
   .footer__bottom-line {
