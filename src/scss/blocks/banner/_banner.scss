@@ -1,0 +1,60 @@
+.banner {
+    padding: 25px 0;
+    background: #FAFAFA;
+    @include mobile-block {
+        padding: 25px 0 45px;
+    }
+}
+
+.banner__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(400px, 520px) minmax(245px, 1fr);
+    grid-gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    @include mobile-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+.banner__descr {
+    margin-top: 10px;
+}
+
+.banner__action {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    @include mobileXS-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.button__act-text {
+    display: inline-block;
+    margin-left: 15px;
+    max-width: 235px;
+    @include mobileXS-block {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+.banner__pic {
+    text-align: center;
+    @include mobile-block {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        text-align: center;
+        max-width: 181px;
+    }
+}
+
+.banner__img {
+    display: inline-block;
+}
