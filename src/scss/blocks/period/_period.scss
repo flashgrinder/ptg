@@ -1,0 +1,83 @@
+.period__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, .33fr));
+    grid-gap: 20px;
+    @include mobile-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+.period__inner.period__inner--copyright {
+    grid-template-columns: repeat(auto-fit, minmax(240px, .25fr));
+    grid-gap: 20px;
+    @include tablet-block {
+        grid-template-columns: repeat(2, minmax(240px, .5fr));;
+    }
+    @include mobileXS-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+.period__item.period__item--copyright .period__text-wrapp {
+    padding: 25px;
+}
+
+.period__descr-wrapp {
+    position: relative;
+    margin-top: 15px;
+    background: #FAFAFA;
+    border-radius: 1px;
+    min-height: 146px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.period__num {
+    font-size: responsive 25px 45px;
+    font-range: 320px 1200px;
+}
+
+.period__num,
+.period__text-wrapp {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.period__text-wrapp {
+    margin-left: 10px;
+}
+
+.period__item:first-child .period__decor,
+.period__item:nth-child(2) .period__decor {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.period__item:last-child .period__decor {
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.period__item.period__item--copyright .period__decor {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.period__decor {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+}
+
+.period__svg-decor {
+    display: block;
+}
+
+.period__add-text {
+    margin-top: 25px;
+}

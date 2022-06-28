@@ -2070,6 +2070,100 @@ img {
   background: #F0F0F0;
 }
 
+/* Period */
+
+.period__inner {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 0.33fr));
+  grid-gap: 20px;
+}
+
+.period__inner.period__inner--copyright {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 0.25fr));
+  grid-gap: 20px;
+}
+
+.period__item.period__item--copyright .period__text-wrapp {
+  padding: 25px;
+}
+
+.period__descr-wrapp {
+  position: relative;
+  margin-top: 15px;
+  background: #FAFAFA;
+  border-radius: 1px;
+  min-height: 146px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.period__num {
+  font-size: calc(25px + 20 * ((100vw - 320px) / 880));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .period__num {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .period__num {
+    font-size: 25px;
+  }
+}
+
+.period__num,
+.period__text-wrapp {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.period__text-wrapp {
+  margin-left: 10px;
+}
+
+.period__item:first-child .period__decor,
+.period__item:nth-child(2) .period__decor {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.period__item:last-child .period__decor {
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.period__item.period__item--copyright .period__decor {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.period__decor {
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.period__svg-decor {
+  display: block;
+}
+
+.period__add-text {
+  margin-top: 25px;
+}
+
 /* Footer */
 
 .footer {
@@ -2163,6 +2257,11 @@ img {
 
   .features__steps::before {
     top: -35px;
+  }
+
+  .period__inner.period__inner--copyright {
+    -ms-grid-columns: minmax(240px, 0.5fr) 20px minmax(240px, 0.5fr);
+    grid-template-columns: repeat(2, minmax(240px, 0.5fr));
   }
 }
 
@@ -2344,6 +2443,11 @@ img {
     grid-template-columns: minmax(280px, 373px) minmax(300px, 1fr);
   }
 
+  .period__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .footer__bottom-line {
     justify-content: space-between;
     text-align: left;
@@ -2512,6 +2616,11 @@ img {
   }
 
   .steps__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .period__inner.period__inner--copyright {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
