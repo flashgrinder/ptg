@@ -126,6 +126,8 @@
         </div>
     </div>
     <!-- /. Modal-services -->
+
+    <!-- Header -->
     <header class="header">
         <div class="header__outer bg--hight-white">
             <div class="header__upper-line container">
@@ -276,6 +278,7 @@
             </div>
         </div>
     </header>
+    <!-- /. Header -->
 
     <!-- MAIN -->
     <main class="main page__container">
