@@ -1,0 +1,37 @@
+.steps__inner {
+    display: grid;
+    grid-template-columns: minmax(280px, 373px) minmax(400px, 1fr);
+    grid-gap: 20px;
+    @include mobile-block {
+        grid-template-columns: minmax(280px, 373px) minmax(300px, 1fr);
+    }
+    @include mobileXS-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+.steps__days {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.steps__title {
+    margin-top: 22px;
+}
+
+.steps__item {
+    padding: 15px 25px 35px;
+    min-height: 141px;
+}
+
+.steps__item:first-child {
+    background: #FAFAFA;
+}
+
+.steps__item:nth-child(2) {
+    background: #F5F4F4;
+}
+
+.steps__item:last-child {
+    background: #F0F0F0;
+}
