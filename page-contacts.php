@@ -47,8 +47,8 @@
                     <h4 class="contacts__title text text--normal text--light-dark text--w-light">
                         Телефон:
                     </h4>
-                    <a href="tel:+78005004602" class="contacts__text text text--normal text--dark text--w-medium">
-                        +7 (800) 500 46 02
+                    <a href="tel:88005004602" class="contacts__text text text--normal text--dark text--w-medium">
+                        8 - (800) - 500 - 46 - 02
                     </a>
                 </div>
                 <div class="contacts__item-info">
