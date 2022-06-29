@@ -174,7 +174,7 @@
                     </div>
                 </div>
                 <div class="banner__pic">
-                    <img src="<?php echo STANDART_DIR; ?>img/banner/banner-img-1.png" alt="" class="banner__img">
+                    <img src="<?php echo STANDART_DIR; ?>img/banner/img-1.png" alt="" class="banner__img">
                 </div>
             </div>
         </div>
