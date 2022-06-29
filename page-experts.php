@@ -172,6 +172,8 @@
     </section>
     <!-- /. Popular-services -->
 
+    <?php get_template_part('templ/popular-services'); ?>
+
     <?php get_template_part('templ/form-page'); ?>
 
 <?php get_footer(); ?>

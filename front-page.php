@@ -18,7 +18,7 @@
                         <a href="#" class="info-block__btn button button--primary">
                             Посмотреть услуги
                         </a>
-                        <a href="#" class="info-block__more link" data-modal="#modal">
+                        <a href="#features" class="info-block__more link">
                             Узнать подробнее о нас
                         </a>
                     </div>
@@ -111,63 +111,48 @@
                 Что мы делаем?
             </h2>
             <div class="popular-services__items">
-                <article class="popular-services__item">
-                    <h3 class="popular-services__title">
-                        <a href="#" class="popular-services__link link">
-                            Регистрация товарных знаков
-                        </a>
-                    </h3>
-                    <p class="popular-services__excerpt text text--normal text--light-dark text--w-light">
-                        Особо важная процедура, для любого предпринимателя. Зарегистрировать товарный знак – значит обезопасить свой бизнес от неожиданных юридических проблем и финансовых потерь.
-                    </p>
-                </article>
-                <article class="popular-services__item">
-                    <h3 class="popular-services__title">
-                        <a href="#" class="popular-services__link link">
-                            Защита авторских прав
-                        </a>
-                    </h3>
-                    <p class="popular-services__excerpt text text--normal text--light-dark text--w-light">
-                        Комплекс мер, направленный на защиту интеллектуальной собственности. Вы развиваете свой талант, мы обеспечиваем безопасность вашего “творчества”.
-                    </p>
-                </article>
-                <article class="popular-services__item">
-                    <h3 class="popular-services__title">
-                        <a href="#" class="popular-services__link link">
-                            Регистрация ЭВМ и IP
-                        </a>
-                    </h3>
-                    <p class="popular-services__excerpt text text--normal text--light-dark text--w-light">
-                        Зарегистрировать программы для ЭВМ и базы данных – значит предоставить правовую защиту объектам авторского права. Это дает бизнесу и стартапам монополию на свои разработки. После внесения в реестр ПО Роспатента и получения патента никто не сможет использовать
-                        ваши идеи.
-                    </p>
-                </article>
-                <article class="popular-services__item">
-                    <h3 class="popular-services__title">
-                        <a href="#" class="popular-services__link link">
-                            Представление интересов в суде, палате по патентным спорам, СИП
-                        </a>
-                    </h3>
-                    <p class="popular-services__excerpt text text--normal text--light-dark text--w-light">
-                        Важно не только получить права на интеллектуальную собственность, но и уметь их защитить! Специалисты компании Patent Trademark group отстоят ваши интересы во всех инстанциях, а опыт сотрудников поможет справиться с решением сложных споров.
-                    </p>
-                </article>
-                <article class="popular-services__item">
-                    <h3 class="popular-services__title">
-                        <a href="#" class="popular-services__link link">
-                            Патентование
-                        </a>
-                    </h3>
-                    <p class="popular-services__excerpt text text--normal text--light-dark text--w-light">
-                        Получение монопольного права на использование своей разработки, благодаря приобретению патента. Мы помогаем сохранить эксклюзивные права на интеллектуальную собственность.
-                    </p>
-                </article>
+            <?php
+
+                $args = array(
+                    'post_type' => 'page',
+                    'posts_per_page' => 8,
+                    'orderby'     => 'date',
+                    'order'       => 'DESC',
+                    'suppress_filters' => true,
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'cats_page',
+                            'field'    => 'slug',
+                            'terms'    => 'uslugi'
+                        )
+                    )
+                );
+
+                $wp_query = new WP_Query( $args );
+
+                if( have_posts() ) : 
+                    while( have_posts() ) : 
+                        the_post();
+                ?>
+                    <article class="popular-services__item">
+                        <h3 class="popular-services__title">
+                            <a href="<?php the_permalink(); ?>" class="popular-services__link link">
+                                <?php the_title(); ?>
+                            </a>
+                        </h3>
+                        <p class="popular-services__excerpt text text--normal text--light-dark text--w-light">
+                            <?php the_excerpt(); ?>
+                        </p>
+                    </article>
+                    <?php endwhile; ?>
+                <?php endif;?>
+                <?php wp_reset_postdata(); ?>
             </div>
         </div>
     </section>
     <!-- /. Popular-services -->
     <!-- Features -->
-    <section class="features block-padding bg--hight-white">
+    <section id="features" class="features block-padding bg--hight-white">
         <div class="features__body container">
             <div class="features__inner">
                 <div class="feature__info-list">

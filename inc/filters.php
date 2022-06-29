@@ -5,7 +5,7 @@
 
     // Длина отрывков постов
     add_filter( 'excerpt_length', function($number) {
-        return 20;
+        return 30;
     });
 
     // Окончание отрывков постов
