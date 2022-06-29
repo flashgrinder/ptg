@@ -755,6 +755,7 @@ img {
 }
 
 .modal__form .wpcf7-not-valid-tip {
+  display: none;
   text-align: center;
   font-family: var(--font-winston);
   font-size: 12px;
@@ -1270,6 +1271,7 @@ img {
 }
 
 .form-page .wpcf7-not-valid-tip {
+  display: none;
   color: rgba(255, 0, 0, 0.8);
   position: absolute;
   top: -20px;

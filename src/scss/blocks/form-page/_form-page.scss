@@ -92,6 +92,7 @@
 }
 
 .form-page .wpcf7-not-valid-tip {
+    display: none;
     color: rgba(255, 0, 0, 0.8);
     position: absolute;
     top: -20px;
