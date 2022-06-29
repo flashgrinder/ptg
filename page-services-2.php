@@ -221,7 +221,7 @@
                     </div>
                 </div>
                 <div class="banner__pic">
-                    <img src="<?php echo STANDART_DIR; ?>img/banner/img-2.svg" alt="" class="banner__img">
+                    <img src="<?php echo STANDART_DIR; ?>img/banner/img-2.svg" alt="" class="banner__pictures">
                 </div>
             </div>
         </div>
