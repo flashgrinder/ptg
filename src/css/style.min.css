@@ -1331,7 +1331,7 @@ img {
   color: var(--color-white);
   font-size: 14px;
   font-weight: 300;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
@@ -1343,7 +1343,7 @@ img {
 .wpcf7 .form.invalid .wpcf7-response-output,
 .wpcf7 .form.unaccepted .wpcf7-response-output,
 .wpcf7 .form.payment-required .wpcf7-response-output {
-  border-color: #ffb900;
+  border-color: #eeff09;
 }
 
 /* Experts */
