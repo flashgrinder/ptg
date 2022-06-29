@@ -23,41 +23,7 @@
                 <h3 class="modal__title title title--large title--dark title--w-semibold center">
                     Форма обратной связи
                 </h3>
-                <div class="wpcf7">
-                    <form action="" class="modal__form invalid wpcf7-form">
-                        <div class="modal__field">
-                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
-                                Укажите ваше имя
-                            </p>
-                            <input type="text" class="modal__input" placeholder="Ваше имя">
-                        </div>
-                        <div class="modal__field">
-                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
-                                Укажите ваш номер телефона
-                            </p>
-                            <input type="tel" class="modal__input" placeholder="Ваш телефон">
-                        </div>
-                        <div class="modal__protect">
-                            <span class="modal__icon-protect">
-                                <svg class="modal__svg-protect" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.75 8.25H5.25C4.42157 8.25 3.75 8.92157 3.75 9.75V14.25C3.75 15.0784 4.42157 15.75 5.25 15.75H12.75C13.5784 15.75 14.25 15.0784 14.25 14.25V9.75C14.25 8.92157 13.5784 8.25 12.75 8.25Z" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9 12.75C9.41421 12.75 9.75 12.4142 9.75 12C9.75 11.5858 9.41421 11.25 9 11.25C8.58579 11.25 8.25 11.5858 8.25 12C8.25 12.4142 8.58579 12.75 9 12.75Z" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M6 8.25V5.25C6 4.45435 6.31607 3.69129 6.87868 3.12868C7.44129 2.56607 8.20435 2.25 9 2.25C9.79565 2.25 10.5587 2.56607 11.1213 3.12868C11.6839 3.69129 12 4.45435 12 5.25V8.25" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            <span class="modal__text-protect text text--tiny text--light-dark text--w-light">
-                            Не беспокойтесь, ваши данные под надежной защитой
-                        </span>
-                        </div>
-                        <div class="modal__actions">
-                            <input type="button" value="Отправить" class="modal__btn button button--primary">
-                            <span class="wpcf7-spinner"></span>
-                        </div>
-                        <div class="wpcf7-response-output" aria-hidden="true">
-                            Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
-                        </div>
-                    </form>
-                </div>
+                <?php echo do_shortcode( '[contact-form-7 title="Модальное окно - Связаться с нами" html_class="modal__form"]' ); ?>
             </div>
         </div>
     </div>
@@ -75,53 +41,7 @@
                 <h3 class="modal__title title title--large title--dark title--w-semibold center">
                     Форма обратной связи
                 </h3>
-                <div class="wpcf7">
-                    <form action="" class="modal__form invalid wpcf7-form">
-                        <div class="modal__field">
-                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
-                                Укажите ваше имя
-                            </p>
-                            <input type="text" class="modal__input" placeholder="Ваше имя">
-                        </div>
-                        <div class="modal__field">
-                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
-                                Укажите ваш номер телефона
-                            </p>
-                            <input type="tel" class="modal__input" placeholder="Ваш телефон">
-                        </div>
-                        <div class="modal__field">
-                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
-                                Вас заинтересовала услуга
-                            </p>
-                            <input type="email" class="modal__input" placeholder="Патентование">
-                        </div>
-                        <div class="modal__field">
-                            <p class="modal__field-text text text--tiny text--light-dark text--w-light">
-                                Дополнительная информация
-                            </p>
-                            <textarea class="modal__input modal__input--textarea" cols="40" row="10" placeholder="Комментарий..."></textarea>
-                        </div>
-                        <div class="modal__protect">
-                            <span class="modal__icon-protect">
-                                <svg class="modal__svg-protect" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.75 8.25H5.25C4.42157 8.25 3.75 8.92157 3.75 9.75V14.25C3.75 15.0784 4.42157 15.75 5.25 15.75H12.75C13.5784 15.75 14.25 15.0784 14.25 14.25V9.75C14.25 8.92157 13.5784 8.25 12.75 8.25Z" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9 12.75C9.41421 12.75 9.75 12.4142 9.75 12C9.75 11.5858 9.41421 11.25 9 11.25C8.58579 11.25 8.25 11.5858 8.25 12C8.25 12.4142 8.58579 12.75 9 12.75Z" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M6 8.25V5.25C6 4.45435 6.31607 3.69129 6.87868 3.12868C7.44129 2.56607 8.20435 2.25 9 2.25C9.79565 2.25 10.5587 2.56607 11.1213 3.12868C11.6839 3.69129 12 4.45435 12 5.25V8.25" stroke="#6D6864" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            <span class="modal__text-protect text text--tiny text--light-dark text--w-light">
-                                Не беспокойтесь, ваши данные под надежной защитой
-                            </span>
-                        </div>
-                        <div class="modal__actions">
-                            <input type="button" value="Отправить" class="modal__btn button button--primary">
-                            <span class="wpcf7-spinner"></span>
-                        </div>
-                        <div class="wpcf7-response-output" aria-hidden="true">
-                            Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
-                        </div>
-                    </form>
-                </div>
+                <?php echo do_shortcode( '[contact-form-7 title="Модальное окно - Услуги" html_class="modal__form"]' ); ?>
             </div>
         </div>
     </div>

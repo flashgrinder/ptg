@@ -13,27 +13,7 @@
         <p class="form-page__descr text text--normal text--white text--w-regular">
             Запишитесь на бесплатную консультацию
         </p>
-        <div class="wpcf7">
-            <form method="post" class="form-page__form form invalid">
-                <div class="form-page__fields">
-                    <div class="form-page__field">
-                        <input type="text" class="form-page__input" placeholder="Ваше имя">
-                        <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
-                    </div>
-                    <div class="form-page__field">
-                        <input type="tel" class="form-page__input" placeholder="Ваш телефон">
-                        <span class="wpcf7-not-valid-tip" aria-hidden="true">Поле обязательно для заполнения.</span>
-                    </div>
-                    <div class="form-page__actions">
-                        <input type="submit" value="Получить консультация" class="form-page__btn button button--secondary">
-                        <span class="wpcf7-spinner"></span>
-                    </div>
-                </div>
-                <div class="wpcf7-response-output" aria-hidden="true">
-                    Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.
-                </div>
-            </form>
-        </div>
+        <?php echo do_shortcode( '[contact-form-7 title="Форма на странице" html_class="form-page__form"]' ); ?>
     </div>
 </section>
 <!-- /. Form-page -->

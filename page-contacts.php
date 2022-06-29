@@ -13,10 +13,10 @@
                         Patent Trademark group - агентство, которое работает со своими клиентами онлайн. Но также вы можете посетить наш офис.
                     </p>
                     <div class="info-block__actions">
-                        <a href="#" class="info-block__btn button button--primary" data-modal="#modal-services">
+                        <a href="#" class="info-block__btn button button--primary hide" data-modal="#modal-services">
                             Как проехать?
                         </a>
-                        <a href="#" class="info-block__btn button button--secondary" data-modal="#modal">
+                        <a href="#" class="info-block__btn button button--secondary" data-modal="#modal-services">
                             Перезвоните мне
                         </a>
                     </div>

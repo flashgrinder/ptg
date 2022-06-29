@@ -3,6 +3,8 @@
     /* Убираем тег <p></p> у отрывков */
     remove_filter( 'the_excerpt','wpautop');
 
+    add_filter('wpcf7_autop_or_not', '__return_false');
+
     // Длина отрывков постов
     add_filter( 'excerpt_length', function($number) {
         return 30;
