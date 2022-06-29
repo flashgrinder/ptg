@@ -178,34 +178,34 @@
     </section>
     <!-- /. Stages -->
 
-    <!-- Banner -->
-    <section class="banner">
-        <div class="banner__body container">
-            <div class="banner__inner">
-                <div class="banner__text">
-                    <h2 class="banner__heading title title--big title--accent-color title--uppercase">
+    <!-- Plunk -->
+    <section class="plunk">
+        <div class="plunk__body container">
+            <div class="plunk__inner">
+                <div class="plunk__text">
+                    <h2 class="plunk__heading title title--big title--accent-color title--uppercase">
                         Защити свой бизнес от конкурентов
                     </h2>
-                    <div class="banner__descr wysiwyg">
+                    <div class="plunk__descr wysiwyg">
                         <ul>
                             <li>Доверь нам даже самый сложный случай</li>
                             <li>Будь уверен в защите своих интересов во всех инстанциях</li>
                             <li>Сохрани права на интеллектуальную собственность</li>
                         </ul>
                     </div>
-                    <div class="banner__action">
-                        <a href="javascript:;" class="banner__button button button--primary" data-modal="#modal-services">
+                    <div class="plunk__action">
+                        <a href="javascript:;" class="plunk__button button button--primary" data-modal="#modal-services">
                             Получить консультацию юриста
                         </a>
                     </div>
                 </div>
-                <div class="banner__pic">
-                    <img src="<?php echo STANDART_DIR; ?>img/banner/img-3.svg" alt="" class="banner__pictures">
+                <div class="plunk__pic">
+                    <img src="<?php echo STANDART_DIR; ?>img/plunk/img-3.svg" alt="" class="plunk__pictures">
                 </div>
             </div>
         </div>
     </section>
-    <!-- /. Banner -->
+    <!-- /. Plunk -->
 
     <!-- FAQ -->
     <section class="faq block-padding">

@@ -1,4 +1,4 @@
-.banner {
+.plunk {
     padding: 25px 0;
     background: #FAFAFA;
     @include mobile-block {
@@ -6,7 +6,7 @@
     }
 }
 
-.banner__inner {
+.plunk__inner {
     position: relative;
     display: grid;
     grid-template-columns: minmax(400px, 520px) minmax(245px, 1fr);
@@ -19,11 +19,11 @@
     }
 }
 
-.banner__descr {
+.plunk__descr {
     margin-top: 10px;
 }
 
-.banner__action {
+.plunk__action {
     margin-top: 45px;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
     }
 }
 
-.banner__pic {
+.plunk__pic {
     text-align: center;
     @include mobile-block {
         position: absolute;
@@ -55,6 +55,6 @@
     }
 }
 
-.banner__pictures {
+.plunk__pictures {
     display: inline-block;
 }

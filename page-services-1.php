@@ -153,19 +153,19 @@
     </section>
     <!-- /. Steps -->
 
-    <!-- Banner -->
-    <section class="banner">
-        <div class="banner__body container">
-            <div class="banner__inner">
-                <div class="banner__text">
-                    <h2 class="banner__heading title title--big title--accent-color title--uppercase">
+    <!-- Plunk -->
+    <section class="plunk">
+        <div class="plunk__body container">
+            <div class="plunk__inner">
+                <div class="plunk__text">
+                    <h2 class="plunk__heading title title--big title--accent-color title--uppercase">
                         Скидка 25%
                     </h2>
-                    <p class="banner__descr text text--normal text--light-dark  text--w-light">
+                    <p class="plunk__descr text text--normal text--light-dark  text--w-light">
                         на разработку патентнопригодного товарного знака!
                     </p>
-                    <div class="banner__action">
-                        <a href="javascript:;" class="banner__button button button--primary" data-modal="#modal-services">
+                    <div class="plunk__action">
+                        <a href="javascript:;" class="plunk__button button button--primary" data-modal="#modal-services">
                             Получить скидку
                         </a>
                         <span class="button__act-text text text--normal text--small text--gray text--w-light">
@@ -173,13 +173,13 @@
                         </span>
                     </div>
                 </div>
-                <div class="banner__pic">
-                    <img src="<?php echo STANDART_DIR; ?>img/banner/img-1.png" alt="" class="banner__pictures">
+                <div class="plunk__pic">
+                    <img src="<?php echo STANDART_DIR; ?>img/plunk/img-1.png" alt="" class="plunk__pictures">
                 </div>
             </div>
         </div>
     </section>
-    <!-- /. Banner -->
+    <!-- /. Plunk -->
 
     <!-- FAQ -->
     <section class="faq block-padding">
