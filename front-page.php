@@ -15,7 +15,7 @@
                         со сложными случаями и высокой гарантией успеха.
                     </p>
                     <div class="info-block__actions">
-                        <a href="#" class="info-block__btn button button--primary">
+                        <a href="#services" class="info-block__btn button button--primary">
                             Посмотреть услуги
                         </a>
                         <a href="#features" class="info-block__more link">
