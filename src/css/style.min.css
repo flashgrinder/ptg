@@ -2416,14 +2416,6 @@ img {
     color: var(--color-white);
   }
 
-  .footer__menu-item.menu-item-type-post_type.is-active .menu__link {
-    color: var(--color-gray);
-  }
-
-  .footer__menu-item .menu__link:hover {
-    color: var(--color-gray);
-  }
-
   .form-page .wpcf7-not-valid-tip {
     top: -30px;
     padding: 5px 0;
