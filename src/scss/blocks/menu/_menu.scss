@@ -59,7 +59,7 @@
     transition: color ease-in-out .150s;
 }
 
-.footer__menu-item.is-active .menu__link {
+.footer__menu-item.menu-item-type-post_type.is-active .menu__link {
     color: var(--color-accent);
     @include mobile(color, var(--color-gray));
 }
