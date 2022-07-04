@@ -1042,7 +1042,7 @@ img {
   margin-left: 25px;
 }
 
-.header__menu-item.is-active .menu__link {
+.header__menu-item.menu-item-type-post_type.is-active .menu__link {
   color: var(--color-gray);
 }
 
@@ -1053,7 +1053,7 @@ img {
 }
 
 .header__menu-item .menu__link:hover {
-  color: var(--color-gray);
+  color: var(--color-accent);
 }
 
 .footer__menu-item.menu__item ~ .footer__menu-item.menu__item {
@@ -2408,16 +2408,12 @@ img {
     margin-left: 0;
   }
 
-  .header__menu-item.is-active .menu__link {
+  .header__menu-item.menu-item-type-post_type.is-active .menu__link {
     color: var(--color-accent);
   }
 
   .header__menu-item .menu__link {
     color: var(--color-white);
-  }
-
-  .header__menu-item .menu__link:hover {
-    color: var(--color-accent);
   }
 
   .footer__menu-item.is-active .menu__link {
