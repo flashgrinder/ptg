@@ -37,7 +37,7 @@
                         Адрес:
                     </h4>
                     <p class="contacts__text text text--normal text--dark text--w-medium">
-                        Москва, Варшавское шоссе, дом 34
+                        Москва, ул. Бережковская Набережная, д. 24, стр. 1
                     </p>
                 </div>
                 <div class="contacts__item-info">

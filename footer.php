@@ -56,7 +56,7 @@
                 </div>
                 <div class="footer__column footer__column--three">
                     <address class="footer__address text text--small text--white text--w-regular">
-                        Россиия, Москва, Кутузовский пр-т, д. Х, стр. Y Индекс 4****0
+                        Россиия, г. Москва, ул. Бережковская Набережная, д. 24, стр. 1
                     </address>
                 </div>
                 <div class="footer__column footer__column--four">
