@@ -62,19 +62,7 @@
     // Добавляет активный класс к пункту меню в шапке
     add_filter('nav_menu_css_class' , function($classes, $item) {
 
-        if ( in_array('current-menu-item', $classes) || $args->theme_location === 'header-menu' ){
-
-            $classes[] = 'is-active ';
-
-        }
-        return $classes;
-
-    } , 10 , 2);
-
-    // Добавляет активный класс к пункту меню в подвале
-    add_filter('nav_menu_css_class' , function($classes, $item) {
-
-        if ( in_array('current-menu-item', $classes) || $args->theme_location === 'footer-menu' ){
+        if ( in_array('current-menu-item', $classes) ){
 
             $classes[] = 'is-active ';
 
