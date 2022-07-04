@@ -69,7 +69,7 @@
                 <div class="footer__copy text text--tiny text--white text--w-regular">
                     © Patent&Trademark Group 2022
                 </div>
-                <a href="#" class="footer__devsite">
+                <a href="https://fcdigital.ru" class="footer__devsite">
                     <div class="footer__devsite-text text text--small text--white text--w-regular">
                         Разработка и дизайн сайта
                         <br>Fincom Digital
