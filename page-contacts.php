@@ -37,7 +37,7 @@
                         Адрес:
                     </h4>
                     <p class="contacts__text text text--normal text--dark text--w-medium">
-                        Москва, ул. Бережковская Набережная, д. 24, стр. 1
+                        Москва, ул. Бережковская набережная, д. 24, стр. 1
                     </p>
                 </div>
                 <div class="contacts__item-info">
@@ -45,7 +45,7 @@
                         Телефон:
                     </h4>
                     <a href="tel:88005004602" class="contacts__text text text--normal text--dark text--w-medium">
-                        8 - (800) - 500 - 46 - 02
+                        8(800)500 - 46 - 02
                     </a>
                 </div>
                 <div class="contacts__item-info">
