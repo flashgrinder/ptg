@@ -32,7 +32,7 @@
                         wp_nav_menu([
                             'theme_location'  => 'footer-menu-1',
                             'container'       => 'nav',
-                            'container_class' => 'menu',
+                            'container_class' => 'footer__menu-nav menu',
                             'menu_class'      => '',
                             'items_wrap'      => '<ul class="%2$s footer__menu-list menu__list ">%3$s</ul>'
                         ]);
