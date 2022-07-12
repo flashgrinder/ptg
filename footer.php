@@ -51,7 +51,7 @@
                 </div>
                 <div class="footer__column footer__column--three">
                     <address class="footer__address text text--small text--white text--w-regular">
-                        Россиия, г. Москва, <br> ул. Бережковская Набережная, д. 24, стр. 1
+                        Россиия, г. Москва, <br> ул. Бережковская набережная, д. 24, стр. 1
                     </address>
                 </div>
                 <div class="footer__column footer__column--four">
@@ -62,7 +62,7 @@
             </div>
             <div class="footer__bottom-line">
                 <div class="footer__copy text text--tiny text--white text--w-regular">
-                    © Patent&Trademark Group 2022
+                    © Patent&Trademark Group <?php the_date('Y'); ?>
                 </div>
                 <a href="https://fcdigital.ru" class="footer__devsite">
                     <div class="footer__devsite-text text text--small text--white text--w-regular">
