@@ -98,6 +98,19 @@
                         </p>
                     </div>
                 </article>
+                <article class="experts__item">
+                    <div class="experts__photo">
+                        <img src="<?php echo STANDART_DIR; ?>img/experts/experts-img-5.jpg" alt="" class="experts__img">
+                    </div>
+                    <div class="experts__inner">
+                        <h3 class="experts__name text text--normal text--dark text--w-medium">
+                            Анатолий Елочкин
+                        </h3>
+                        <p class="experts__info text text--normal text--light-dark text--w-light">
+                            Директор компании Patent Trademark group. Юрист, советник юстиции. Опыт работы в гражданско-правовой сфере более 35 лет.
+                        </p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
