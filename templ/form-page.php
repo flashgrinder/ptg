@@ -7,7 +7,7 @@
                 fill="#CDAD7D" />
             </svg>
         </div>
-        <h2 class="form-page__heading title title--big title--white title--w-semibold title--uppercase title--indent-secondary">
+        <h2 class="form-page__heading title title--large title--white title--w-semibold title--uppercase title--indent-secondary">
             Не знаете, с чего начать?
         </h2>
         <p class="form-page__descr text text--normal text--white text--w-regular">
