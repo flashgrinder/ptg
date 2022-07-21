@@ -6,7 +6,13 @@
             <article class="news__article">
                 <header class="news__header">
                     <div class="news__pic">
-                        <img src="https://picsum.photos/800" alt="" class="news__img">
+                    <?php
+                        $default_attr = [
+                            'class'	=> "news__img",
+                            'alt'   => get_the_title()
+                        ];
+                        
+                        echo get_the_post_thumbnail( $post->ID, 'full', $default_attr ) ?>
                     </div>
                     <h1 class="news__title title title--large title--dark title--w-semibold title--uppercase title--indent">
                         <?php the_title(); ?>
