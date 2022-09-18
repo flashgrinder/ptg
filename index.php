@@ -63,10 +63,11 @@
                                 <header class="news-list__header">
                                     <div class="news-list__meta text text--normal text--gray text--w-light">
                                         <span class="news-list__date">
-                                            2 мая 2022
+                                            <?php echo get_the_date('j F Y'); ?>
                                         </span>
                                         <span class="news-list__views">
-                                            17384 просмотра
+                                            <?php if( get_post_meta( $post->ID, 'views', true ) == null ) { echo '0'; } else { echo get_post_meta( $post->ID, 'views', true ); } ?>
+                                            <?php echo num_decline(kama_postviews(), 'просмотр, просмотров');  ?>
                                         </span>
                                     </div>
                                     <h2 class="news-list__title title title--large title--dark title--w-semibold title--uppercase">
