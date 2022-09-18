@@ -18,33 +18,71 @@
                 ?>
                 <?php if( $post_list->have_posts() ) : 
                     while( $post_list->have_posts() ) : $post_list->the_post(); ?>
-                    <article class="news-list__item <?php if(get_query_var('paged') == 0 && $post_list->current_post == 0){echo 'news-list__item--wide';} ?>">
-                        <aside class="news-list__aside">
-                            <div class="news-list__pic">
-                            <?php
-                                $default_attr = [
-                                    'class'	=> "news-list__thumb",
-                                    'alt'   => get_the_title()
-                                ];
-                                
-                                echo get_the_post_thumbnail( $post->ID, 'large', $default_attr ) ?>
+                    <?php if(get_query_var('paged') == 0 && $post_list->current_post == 0) : ?>
+                        <article class="news-list__item news-list__item--wide">
+                            <aside class="news-list__aside">
+                                <div class="news-list__pic">
+                                <?php
+                                    $default_attr = [
+                                        'class'	=> "news-list__thumb",
+                                        'alt'   => get_the_title()
+                                    ];
+                                    
+                                    echo get_the_post_thumbnail( $post->ID, 'large', $default_attr ) ?>
+                                </div>
+                            </aside>
+                            <div class="news-list__inner">
+                                <header class="news-list__header">
+                                    <h2 class="news-list__title title title--large title--dark title--w-semibold title--uppercase">
+                                        <a href="<?php the_permalink(); ?>" class="news-list__link">
+                                            <?php the_title(); ?>
+                                        </a> 
+                                    </h2>
+                                </header>
+                                <footer class="news-list__footer">
+                                    <p class="news-list__excerpt text text--normal text--light-dark text--w-light">
+                                        <?php the_excerpt(); ?>
+                                    </p>
+                                </footer>
                             </div>
-                        </aside>
-                        <div class="news-list__inner">
-                            <header class="news-list__header">
-                                <h2 class="news-list__title title title--large title--dark title--w-semibold title--uppercase">
-                                    <a href="<?php the_permalink(); ?>" class="news-list__link">
-                                        <?php the_title(); ?>
-                                    </a> 
-                                </h2>
-                            </header>
-                            <footer class="news-list__footer">
-                                <p class="news-list__excerpt text text--normal text--light-dark text--w-light">
-                                    <?php the_excerpt(); ?>
-                                </p>
-                            </footer>
-                        </div>
-                    </article>
+                        </article>
+                    <?php else : ?>
+                        <article class="news-list__item">
+                            <aside class="news-list__aside">
+                                <div class="news-list__pic">
+                                <?php
+                                    $default_attr = [
+                                        'class'	=> "news-list__thumb",
+                                        'alt'   => get_the_title()
+                                    ];
+                                    
+                                    echo get_the_post_thumbnail( $post->ID, 'medium', $default_attr ) ?>
+                                </div>
+                            </aside>
+                            <div class="news-list__inner">
+                                <header class="news-list__header">
+                                    <div class="news-list__meta text text--normal text--gray text--w-light">
+                                        <span class="news-list__date">
+                                            2 мая 2022
+                                        </span>
+                                        <span class="news-list__views">
+                                            17384 просмотра
+                                        </span>
+                                    </div>
+                                    <h2 class="news-list__title title title--large title--dark title--w-semibold title--uppercase">
+                                        <a href="<?php the_permalink(); ?>" class="news-list__link">
+                                            <?php the_title(); ?>
+                                        </a>
+                                    </h2>
+                                </header>
+                                <footer class="news-list__footer">
+                                    <p class="news-list__excerpt text text--normal text--light-dark text--w-light">
+                                        <?php the_excerpt(); ?>
+                                    </p>
+                                </footer>
+                            </div>
+                        </article>
+                        <?php endif; ?>
                     <?php endwhile; ?>
                 <?php  endif; ?>
                 <?php wp_reset_postdata(); ?>
