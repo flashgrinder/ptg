@@ -51,7 +51,7 @@
                 </div>
                 <div class="footer__column footer__column--three">
                     <address class="footer__address text text--small text--white text--w-regular">
-                        Россиия, г. Москва, <br> ул. Бережковская набережная, д. 24, стр. 1
+                        Работаем по всей России
                     </address>
                 </div>
                 <div class="footer__column footer__column--four">

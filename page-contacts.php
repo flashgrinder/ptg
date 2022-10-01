@@ -37,7 +37,7 @@
                         Адрес:
                     </h4>
                     <p class="contacts__text text text--normal text--dark text--w-medium">
-                        Москва, ул. Бережковская набережная, д. 24, стр. 1
+                        г. Москва, Работаем по всей России
                     </p>
                 </div>
                 <div class="contacts__item-info">
