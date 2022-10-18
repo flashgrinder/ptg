@@ -45,7 +45,7 @@
                         Телефон:
                     </h4>
                     <a href="tel:88005004602" class="contacts__text text text--normal text--dark text--w-medium">
-                        8(800)500 - 46 - 02
+                        8 (800) 500 4602
                     </a>
                 </div>
                 <div class="contacts__item-info">

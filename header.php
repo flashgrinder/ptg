@@ -59,7 +59,7 @@
                             </svg>
                         </span>
                         <span class="header__num-phone text text--dark text--tiny text--w-regular">
-                            8 - (800) - 500 - 46 - 02
+                            8(800) 500 4602
                         </span>
                     </a>
                     <a href="mailto:manager@patentgroup.ru" class="header__email header__contacts-link">
