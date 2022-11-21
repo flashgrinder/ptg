@@ -142,12 +142,10 @@
                                                 0<?php echo get_row_index(); ?>
                                             </span>
                                             <span class="steps__days text text--normal text--gray text--w-light">
-                                                4-5 дней
                                                 <?php echo $steps_time; ?>
                                             </span>
                                         </div>
                                         <h4 class="steps__title text text--normal text--dark text--w-medium">
-                                            Предварительная экспертиза товарного знака
                                             <?php echo $steps_title; ?>
                                         </h4>
                                     </div>
