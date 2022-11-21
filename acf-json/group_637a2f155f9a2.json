@@ -1,0 +1,1013 @@
+{
+    "key": "group_637a2f155f9a2",
+    "title": "Настройки услуги",
+    "fields": [
+        {
+            "key": "field_637a2f15b03cf",
+            "label": "Контентные блоки",
+            "name": "service-blocks",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_637a2f2a06b23": {
+                    "key": "layout_637a2f2a06b23",
+                    "name": "service-block_editor",
+                    "label": "Текстовый редактор",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": "1"
+                },
+                "layout_637a2fc2b03d0": {
+                    "key": "layout_637a2fc2b03d0",
+                    "name": "service-block_accordion",
+                    "label": "FAQ",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_637a3207831be",
+                            "label": "Заголовок блока",
+                            "name": "accordion-block_title",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Часто задаваемые вопросы",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_637a327f831bf",
+                            "label": "Аккордеон",
+                            "name": "accordion",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Добавить",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_637a32b4831c0",
+                                    "label": "Аккордеон",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_637a327f831bf"
+                                },
+                                {
+                                    "key": "field_637a32c0831c1",
+                                    "label": "Заголовок",
+                                    "name": "accordion_title",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "Добавьте заголовок.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Вопрос?",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "br",
+                                    "parent_repeater": "field_637a327f831bf"
+                                },
+                                {
+                                    "key": "field_637a3315831c2",
+                                    "label": "Описание",
+                                    "name": "accordion_descr",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "Добавьте текст.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Ответ",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "br",
+                                    "parent_repeater": "field_637a327f831bf"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_637a337d876f9": {
+                    "key": "layout_637a337d876f9",
+                    "name": "service-block_text-list",
+                    "label": "Текстовый блок(Доп: Иконки с текстом)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_637a34ebac499",
+                            "label": "Заголовок блока",
+                            "name": "text-list-block_title",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "ВИДЫ ТОВАРНОГО ЗНАКА",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_637a3536ac49a",
+                            "label": "Редактор",
+                            "name": "text-list-block_editor",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Укажите описание.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Товарный знак как актив можно продать, сдать в аренду, получить под него кредит в банке. Зарегистрированный ТЗ даёт право презентовать себя на крупных торговых площадках, участвовать в тендерах и госзакупках, продавать свой продукт в федеральных сетях, а также масштабировать свой бизнес, создавая франшизу.",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_637a36a7ac49f",
+                            "label": "Колонки",
+                            "name": "text-list_col",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Добавить",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_637a36cfac4a0",
+                                    "label": "Колонка",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_637a36a7ac49f"
+                                },
+                                {
+                                    "key": "field_637a35c7ac49b",
+                                    "label": "Иконки с текстом",
+                                    "name": "text-list",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "Добавьте иконки с текстом.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "block",
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "",
+                                    "button_label": "Добавить",
+                                    "rows_per_page": 20,
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_637a35faac49c",
+                                            "label": "Иконка с текстом",
+                                            "name": "",
+                                            "aria-label": "",
+                                            "type": "accordion",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "open": 0,
+                                            "multi_expand": 0,
+                                            "endpoint": 0,
+                                            "parent_repeater": "field_637a35c7ac49b"
+                                        },
+                                        {
+                                            "key": "field_637a3605ac49d",
+                                            "label": "Иконка",
+                                            "name": "text-list_icon",
+                                            "aria-label": "",
+                                            "type": "image",
+                                            "instructions": "Добавьте иконку.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": "",
+                                            "preview_size": "full",
+                                            "parent_repeater": "field_637a35c7ac49b"
+                                        },
+                                        {
+                                            "key": "field_637a3667ac49e",
+                                            "label": "Короткий текст",
+                                            "name": "text-list_name",
+                                            "aria-label": "",
+                                            "type": "text",
+                                            "instructions": "Добавьте короткий текст.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Текст",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "parent_repeater": "field_637a35c7ac49b"
+                                        }
+                                    ],
+                                    "parent_repeater": "field_637a36a7ac49f"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_637b2063333ad": {
+                    "key": "layout_637b2063333ad",
+                    "name": "service-block_plunk",
+                    "label": "Акция",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_637b209f333ae",
+                            "label": "Заголовок",
+                            "name": "plunk_title",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Скидка 25%",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_637b21a6333af",
+                            "label": "Подзаголовок",
+                            "name": "plunk_subtitle",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите подзаголовок. Если не указывать, отображаться не будет.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "на разработку патентопригодного товарного знака!",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_637b248f333b2",
+                            "label": "Текст под заголовком",
+                            "name": "plunk_descr",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Укажите текст. Если не указывать, отображаться не будет.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_637b22de333b0",
+                            "label": "Название кнопки",
+                            "name": "plunk_btn_name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Укажите название кнопки.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Получить скидку",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_637b2304333b1",
+                            "label": "Текс справа от кнопки",
+                            "name": "plunk_btn_left_text",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Укажите текст справа от кнопки. Если не заполнять, не отображается.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Акция действует при заказе услуги \"регистрация ТЗ по ключ\"",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_637b2536333b3",
+                            "label": "Изображение",
+                            "name": "plunk_img",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Добавьте изображение.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "full"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_637b27915eec5": {
+                    "key": "layout_637b27915eec5",
+                    "name": "service-block_stages",
+                    "label": "Этапы",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_637b2ae35eec6",
+                            "label": "Заголовок блока",
+                            "name": "service-block_stages_title",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Этапы работы с нами",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_637b2b385eec7",
+                            "label": "Этапы",
+                            "name": "stages",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "Добавьте этапы.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Добавить",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_637b2b535eec8",
+                                    "label": "Этап",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_637b2b385eec7"
+                                },
+                                {
+                                    "key": "field_637b2bc55eecb",
+                                    "label": "Цвет фона",
+                                    "name": "stages_color",
+                                    "aria-label": "",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "#fafafa": "Светло-серый",
+                                        "#f5f4f4": "Тёмно-серый"
+                                    },
+                                    "default_value": "",
+                                    "return_format": "",
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "layout": "",
+                                    "save_other_choice": 0,
+                                    "parent_repeater": "field_637b2b385eec7"
+                                },
+                                {
+                                    "key": "field_637b2b605eec9",
+                                    "label": "Срок исполнения",
+                                    "name": "stages_time",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "Укажите срок исполнения. Если не указывать, отображаться не будет.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "1-2 дня",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_637b2b385eec7"
+                                },
+                                {
+                                    "key": "field_637b2b975eeca",
+                                    "label": "Заголовок",
+                                    "name": "stages_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "Укажите заголовок.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Короткий заголовок",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_637b2b385eec7"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_637b330a7d217": {
+                    "key": "layout_637b330a7d217",
+                    "name": "service-block_period",
+                    "label": "Период\/Стадии",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_637b332e7d218",
+                            "label": "Заголовок блока",
+                            "name": "service-block_period_title",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок блока.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "СРОКИ ДЕЙСТВИЯ ПАТЕНТА:",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_637b335c7d219",
+                            "label": "Количество колонок",
+                            "name": "period_col",
+                            "aria-label": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "period__inner--copyright": "4 колонки",
+                                "period__inner--three": "3 колнки"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "layout": "vertical",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_637b357a7d21a",
+                            "label": "Период\/Стадии",
+                            "name": "period",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "Добавьте элементы.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Добавить",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_637b35ad7d21b",
+                                    "label": "Период\/Стадия",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_637b357a7d21a"
+                                },
+                                {
+                                    "key": "field_637b35bc7d21c",
+                                    "label": "Заголовок",
+                                    "name": "period_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "Укажите заголовок. Если не указывать, не отображается.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Короткий заголовок",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_637b357a7d21a"
+                                },
+                                {
+                                    "key": "field_637b35fe7d21d",
+                                    "label": "Время",
+                                    "name": "period_time",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "Укажите время. Если не указывать, не отображается.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": 10,
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_637b357a7d21a"
+                                },
+                                {
+                                    "key": "field_637b363f7d21e",
+                                    "label": "Время(текст справа)",
+                                    "name": "period_time_left",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "Укажите время(текст справа). Если не указывать, не отображается.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "лет",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_637b357a7d21a"
+                                },
+                                {
+                                    "key": "field_637b366f7d21f",
+                                    "label": "Текст",
+                                    "name": "period_text",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "Укажите короткий текст. Если не указано время, отображается по центру элемента.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Короткий текст.",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "placeholder": "",
+                                    "new_lines": "",
+                                    "parent_repeater": "field_637b357a7d21a"
+                                },
+                                {
+                                    "key": "field_637b36f17d220",
+                                    "label": "Иконка",
+                                    "name": "period_icon",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "Добавьте иконку, которая будет отображаться на фоне.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "full",
+                                    "parent_repeater": "field_637b357a7d21a"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_637b372e7d221",
+                            "label": "Текстовый редактор",
+                            "name": "service_block_period_editor",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Добавьте текст. Если не заполнено, отображаться не будет.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_637b541cc9048": {
+                    "key": "layout_637b541cc9048",
+                    "name": "service-block_steps",
+                    "label": "Шаги( Колонки с текстовым редактором)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_637b5452c9049",
+                            "label": "Заголовок блока",
+                            "name": "steps-block_title",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Укажите заголовок.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Три шага к регистрации товарного знака",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_637b5492c904a",
+                            "label": "Шаги",
+                            "name": "steps",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "Добавьте шаги.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Добавить",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_637b54ecc904b",
+                                    "label": "Шаг",
+                                    "name": "",
+                                    "aria-label": "",
+                                    "type": "accordion",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "open": 0,
+                                    "multi_expand": 0,
+                                    "endpoint": 0,
+                                    "parent_repeater": "field_637b5492c904a"
+                                },
+                                {
+                                    "key": "field_637b554ac904e",
+                                    "label": "Цвет фона",
+                                    "name": "steps_color",
+                                    "aria-label": "",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "#fafafa": "Светло-серый",
+                                        "#f5f4f4": "Серый",
+                                        "#f0f0f0": "Тёмно-серый"
+                                    },
+                                    "default_value": "",
+                                    "return_format": "",
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "layout": "",
+                                    "save_other_choice": 0,
+                                    "parent_repeater": "field_637b5492c904a"
+                                },
+                                {
+                                    "key": "field_637b54fbc904c",
+                                    "label": "Время",
+                                    "name": "steps_time",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "Укажите время или короткий текст.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "4-5 дней",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_637b5492c904a"
+                                },
+                                {
+                                    "key": "field_637b552ac904d",
+                                    "label": "Заголовок",
+                                    "name": "steps_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "Укажите время или короткий текст.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Заголовок",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_637b5492c904a"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_637b5634c904f",
+                            "label": "Текстовый редактор",
+                            "name": "steps-block_editor",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Укажите текст.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Добавить"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-services.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1669027462
+}
