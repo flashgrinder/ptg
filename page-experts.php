@@ -100,7 +100,7 @@
                 </article>
                 <article class="experts__item">
                     <div class="experts__photo">
-                        <img src="<?php echo STANDART_DIR; ?>img/experts/experts-img-5.jpg" alt="" class="experts__img">
+                        <img src="<?php echo STANDART_DIR; ?>img/experts/experts-img-5.jpeg" alt="" class="experts__img">
                     </div>
                     <div class="experts__inner">
                         <h3 class="experts__name text text--normal text--dark text--w-medium">
